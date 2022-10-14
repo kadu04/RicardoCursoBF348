@@ -48,34 +48,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="UMd-xV-AxY"/>
-                    <connections>
-                        <segue destination="9qR-PF-eYj" kind="show" identifier="GoScreen02" id="Pqb-Q9-Xht"/>
-                        <segue destination="r0I-fd-g4v" kind="show" identifier="GoScreen03" id="ejJ-hh-rAW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="686.15384615384608" y="74.644549763033169"/>
-        </scene>
-        <!--Tela02-->
-        <scene sceneID="6OK-r6-Drq">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Tela02" id="9qR-PF-eYj" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="jAx-Es-i3y"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2ig-Co-Zso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1221" y="-53"/>
-        </scene>
-        <!--Tela03-->
-        <scene sceneID="KTL-OV-EfP">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Tela03" id="r0I-fd-g4v" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9o4-qE-G1L"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2vL-QL-jFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1221" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SVY-Pv-aCH">
