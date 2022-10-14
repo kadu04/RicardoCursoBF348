@@ -13,6 +13,10 @@
 		56FB4A5828F8D0AD00A906CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FB4A5628F8D0AD00A906CD /* Main.storyboard */; };
 		56FB4A5A28F8D0AE00A906CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56FB4A5928F8D0AE00A906CD /* Assets.xcassets */; };
 		56FB4A5D28F8D0AE00A906CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FB4A5B28F8D0AE00A906CD /* LaunchScreen.storyboard */; };
+		56FB4A6528F8EF4F00A906CD /* Tela02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FB4A6428F8EF4F00A906CD /* Tela02.swift */; };
+		56FB4A6728F8EFBE00A906CD /* Tela02.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FB4A6628F8EFBE00A906CD /* Tela02.storyboard */; };
+		56FB4A6928F8F9AB00A906CD /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FB4A6828F8F9AB00A906CD /* Tela03.swift */; };
+		56FB4A6B28F8F9BD00A906CD /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FB4A6A28F8F9BD00A906CD /* Tela03.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		56FB4A5928F8D0AE00A906CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56FB4A5C28F8D0AE00A906CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56FB4A5E28F8D0AE00A906CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56FB4A6428F8EF4F00A906CD /* Tela02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02.swift; sourceTree = "<group>"; };
+		56FB4A6628F8EFBE00A906CD /* Tela02.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02.storyboard; sourceTree = "<group>"; };
+		56FB4A6828F8F9AB00A906CD /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
+		56FB4A6A28F8F9BD00A906CD /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				56FB4A5928F8D0AE00A906CD /* Assets.xcassets */,
 				56FB4A5B28F8D0AE00A906CD /* LaunchScreen.storyboard */,
 				56FB4A5E28F8D0AE00A906CD /* Info.plist */,
+				56FB4A6428F8EF4F00A906CD /* Tela02.swift */,
+				56FB4A6628F8EFBE00A906CD /* Tela02.storyboard */,
+				56FB4A6828F8F9AB00A906CD /* Tela03.swift */,
+				56FB4A6A28F8F9BD00A906CD /* Tela03.storyboard */,
 			);
 			path = NavegacaoCursoBF348;
 			sourceTree = "<group>";
@@ -125,8 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56FB4A6728F8EFBE00A906CD /* Tela02.storyboard in Resources */,
 				56FB4A5D28F8D0AE00A906CD /* LaunchScreen.storyboard in Resources */,
 				56FB4A5A28F8D0AE00A906CD /* Assets.xcassets in Resources */,
+				56FB4A6B28F8F9BD00A906CD /* Tela03.storyboard in Resources */,
 				56FB4A5828F8D0AD00A906CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +155,8 @@
 				56FB4A5528F8D0AD00A906CD /* ViewController.swift in Sources */,
 				56FB4A5128F8D0AD00A906CD /* AppDelegate.swift in Sources */,
 				56FB4A5328F8D0AD00A906CD /* SceneDelegate.swift in Sources */,
+				56FB4A6528F8EF4F00A906CD /* Tela02.swift in Sources */,
+				56FB4A6928F8F9AB00A906CD /* Tela03.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

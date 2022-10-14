@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AHr-V0-yra">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tela Root-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavegacaoCursoBF348" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,57 +47,58 @@
                             <constraint firstItem="Z86-d6-ONh" firstAttribute="top" secondItem="n6M-lx-mVL" secondAttribute="bottom" constant="50" id="pmP-ln-ZOL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tela Root" id="UMd-xV-AxY"/>
                     <connections>
-                        <segue destination="Rgw-JK-laL" kind="show" identifier="GoScreen02" id="lwx-XR-sS3"/>
-                        <segue destination="aiw-sT-PJ1" kind="show" identifier="GoScreen03" id="9t5-qu-vo8"/>
+                        <segue destination="9qR-PF-eYj" kind="show" identifier="GoScreen02" id="Pqb-Q9-Xht"/>
+                        <segue destination="r0I-fd-g4v" kind="show" identifier="GoScreen03" id="ejJ-hh-rAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="75"/>
+            <point key="canvasLocation" x="686.15384615384608" y="74.644549763033169"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="fuR-ar-cmG">
+        <!--Tela02-->
+        <scene sceneID="6OK-r6-Drq">
             <objects>
-                <viewController id="aiw-sT-PJ1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U1S-pc-1t3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="P8W-ry-rOc"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hA2-cB-s70"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G1i-tE-KMh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Tela02" id="9qR-PF-eYj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jAx-Es-i3y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ig-Co-Zso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="810"/>
+            <point key="canvasLocation" x="1221" y="-53"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pY8-wD-Ael">
+        <!--Tela03-->
+        <scene sceneID="KTL-OV-EfP">
             <objects>
-                <viewController id="Rgw-JK-laL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fqm-up-w0P">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="reV-rm-0uf"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5cm-6S-dtR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uql-aW-h9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Tela03" id="r0I-fd-g4v" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9o4-qE-G1L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vL-QL-jFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="75"/>
+            <point key="canvasLocation" x="1221" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SVY-Pv-aCH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AHr-V0-yra" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Is8-D0-goY">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Kp-uz-7B4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rm-EC-YGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243.07692307692307" y="74.644549763033169"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
