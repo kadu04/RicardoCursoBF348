@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vH-on-pHt"/>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="boD-mQ-OrA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,7 +33,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="wyK-tm-EQ4" kind="show" identifier="GoTela01" id="Yi0-ab-Acr"/>
+                        <segue destination="wyK-tm-EQ4" kind="show" identifier="GoScreen01" id="YVS-Ik-YNm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jO2-Df-FHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="-28"/>
+            <point key="canvasLocation" x="969" y="-28"/>
         </scene>
     </scenes>
     <resources>

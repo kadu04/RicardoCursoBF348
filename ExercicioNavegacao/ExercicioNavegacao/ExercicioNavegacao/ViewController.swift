@@ -9,17 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
+    
+    
     @IBAction func tappedButton(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "GoScreen01", sender: nil)
     }
+    
 }
 
