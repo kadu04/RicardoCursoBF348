@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qle-dh-9yB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,7 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="GqC-CE-rze">
+            <objects>
+                <navigationController id="Qle-dh-9yB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9OG-fR-Ibb">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="02e-mF-tl0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bT5-TB-qYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="-41"/>
+        </scene>
+        <!--Tela Root-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExercicioNavegacao" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,6 +38,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="boD-mQ-OrA"/>
+                                    <segue destination="AE0-Lw-AWI" kind="show" id="eo4-D9-ABb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,37 +49,35 @@
                             <constraint firstItem="WBO-3n-0So" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gUN-vB-ME3"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="wyK-tm-EQ4" kind="show" identifier="GoScreen01" id="YVS-Ik-YNm"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Tela Root" id="9Yd-5J-A3H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-28"/>
+            <point key="canvasLocation" x="1049" y="-40"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="FIQ-Xo-7YH">
+        <!--Tela02-->
+        <scene sceneID="80Q-zJ-c4P">
             <objects>
-                <viewController id="wyK-tm-EQ4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2tH-oZ-4I0">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                <viewController id="AE0-Lw-AWI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRe-jL-31g">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tV9-VW-hLu"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <viewLayoutGuide key="safeArea" id="NLR-qC-ALo"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bxm-b5-zpO"/>
+                    <navigationItem key="navigationItem" title="Tela02" id="fIK-L4-D3d"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jO2-Df-FHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtH-nU-fi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="-28"/>
+            <point key="canvasLocation" x="1869" y="-41"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
