@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="wyK-tm-EQ4" kind="show" id="Dpz-3w-wSf"/>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vH-on-pHt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +32,9 @@
                             <constraint firstItem="WBO-3n-0So" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gUN-vB-ME3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="wyK-tm-EQ4" kind="show" identifier="GoTela01" id="Yi0-ab-Acr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
