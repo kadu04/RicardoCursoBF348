@@ -13,6 +13,8 @@
 		5614F94B28FA381E00C09D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5614F94928FA381E00C09D84 /* Main.storyboard */; };
 		5614F94D28FA382000C09D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5614F94C28FA382000C09D84 /* Assets.xcassets */; };
 		5614F95028FA382000C09D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5614F94E28FA382000C09D84 /* LaunchScreen.storyboard */; };
+		56DCD32A28FAF3BD001987CA /* Tela02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD32928FAF3BD001987CA /* Tela02.swift */; };
+		56DCD32C28FAF3CC001987CA /* Tela02.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DCD32B28FAF3CC001987CA /* Tela02.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5614F94C28FA382000C09D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5614F94F28FA382000C09D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5614F95128FA382000C09D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DCD32928FAF3BD001987CA /* Tela02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02.swift; sourceTree = "<group>"; };
+		56DCD32B28FAF3CC001987CA /* Tela02.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5614F94C28FA382000C09D84 /* Assets.xcassets */,
 				5614F94E28FA382000C09D84 /* LaunchScreen.storyboard */,
 				5614F95128FA382000C09D84 /* Info.plist */,
+				56DCD32928FAF3BD001987CA /* Tela02.swift */,
+				56DCD32B28FAF3CC001987CA /* Tela02.storyboard */,
 			);
 			path = ExercicioNavegacao;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DCD32C28FAF3CC001987CA /* Tela02.storyboard in Resources */,
 				5614F95028FA382000C09D84 /* LaunchScreen.storyboard in Resources */,
 				5614F94D28FA382000C09D84 /* Assets.xcassets in Resources */,
 				5614F94B28FA381E00C09D84 /* Main.storyboard in Resources */,
@@ -141,6 +148,7 @@
 				5614F94828FA381E00C09D84 /* ViewController.swift in Sources */,
 				5614F94428FA381E00C09D84 /* AppDelegate.swift in Sources */,
 				5614F94628FA381E00C09D84 /* SceneDelegate.swift in Sources */,
+				56DCD32A28FAF3BD001987CA /* Tela02.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

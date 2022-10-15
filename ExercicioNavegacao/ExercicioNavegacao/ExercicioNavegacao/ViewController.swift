@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func tappedButton(_ sender: UIButton) {
-       
+    @IBAction func tappedGoScreen02Button(_ sender: UIButton) {
+        performSegue(withIdentifier: "GoScreen02", sender: nil)
     }
+    
     
 }
 
