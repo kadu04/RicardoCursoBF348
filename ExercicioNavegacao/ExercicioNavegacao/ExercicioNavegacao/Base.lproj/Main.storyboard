@@ -33,18 +33,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBO-3n-0So">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="159.66666666666666" y="404.66666666666669" width="71" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Modal"/>
                                 <connections>
-                                    <action selector="tappedGoScreen02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1i0-qc-222"/>
+                                    <action selector="tappedModalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrP-7F-zBz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-zo-QJv">
+                                <rect key="frame" x="150" y="479.66666666666669" width="90" height="35.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push"/>
+                                <connections>
+                                    <action selector="tappedPushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O09-r8-Da2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
+                            <constraint firstItem="LB2-zo-QJv" firstAttribute="top" secondItem="WBO-3n-0So" secondAttribute="bottom" constant="40" id="KH9-nO-Xsx"/>
                             <constraint firstItem="WBO-3n-0So" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R0A-0o-eGM"/>
+                            <constraint firstItem="LB2-zo-QJv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="SCm-3k-kKv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LB2-zo-QJv" secondAttribute="trailing" constant="150" id="g7d-aW-5aJ"/>
                             <constraint firstItem="WBO-3n-0So" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gUN-vB-ME3"/>
                         </constraints>
                     </view>
