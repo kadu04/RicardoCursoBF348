@@ -14,22 +14,26 @@ class Tela02: UIViewController {
     
     
     var name: String = ""
+    var lastName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        nameLabel.text = name
+        nameLabel.text = "\(name) \(lastName)"
 }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tappedGoScreen03Button(_ sender: UIButton) {
+        
+        let vc = UIStoryboard(name: "Tela03", bundle: nil).instantiateViewController(withIdentifier: "Tela03") as? Tela03
+        //vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")
+        vc?.name = name
+        vc?.lastName = lastName 
+        
+        
+        // o pushViewController ele exibe a tela da controladora
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
-    */
+    
+    
 
 }

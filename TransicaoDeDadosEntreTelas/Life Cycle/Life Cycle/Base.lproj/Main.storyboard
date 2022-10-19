@@ -43,13 +43,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-SP-OR0">
+                                <rect key="frame" x="12" y="242" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu sobrenome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-ih-8d3">
+                                <rect key="frame" x="12" y="198" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sxb-SP-OR0" secondAttribute="trailing" constant="12" id="1gN-ea-gfu"/>
+                            <constraint firstItem="Sxb-SP-OR0" firstAttribute="leading" secondItem="kg9-ih-8d3" secondAttribute="leading" id="2OX-rN-u1r"/>
+                            <constraint firstItem="kg9-ih-8d3" firstAttribute="top" secondItem="hYH-sh-6fu" secondAttribute="bottom" constant="16" id="4nL-bS-4Sm"/>
                             <constraint firstItem="mX5-ha-yu5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="8Ai-tL-Kxd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYH-sh-6fu" secondAttribute="trailing" constant="12" id="FJt-GR-Son"/>
                             <constraint firstItem="hYH-sh-6fu" firstAttribute="leading" secondItem="mX5-ha-yu5" secondAttribute="leading" id="H7n-zY-J4u"/>
+                            <constraint firstItem="kg9-ih-8d3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="HJF-80-9c2"/>
+                            <constraint firstItem="Sxb-SP-OR0" firstAttribute="top" secondItem="kg9-ih-8d3" secondAttribute="bottom" constant="23" id="KQj-6j-LqL"/>
                             <constraint firstItem="hYH-sh-6fu" firstAttribute="top" secondItem="mX5-ha-yu5" secondAttribute="bottom" constant="16" id="RFo-jm-HDU"/>
                             <constraint firstItem="DcS-Dj-vDb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XBm-wN-N85"/>
                             <constraint firstItem="DcS-Dj-vDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gsV-lr-Iq3"/>
@@ -60,6 +76,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="Cq1-nU-aL5"/>
                     <connections>
+                        <outlet property="lastNameTextField" destination="Sxb-SP-OR0" id="P8j-eB-i8d"/>
                         <outlet property="nameTextField" destination="hYH-sh-6fu" id="iMV-J9-vbW"/>
                     </connections>
                 </viewController>

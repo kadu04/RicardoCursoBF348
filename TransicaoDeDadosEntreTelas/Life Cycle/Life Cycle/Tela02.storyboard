@@ -22,11 +22,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-15-6fQ">
+                                <rect key="frame" x="157" y="510" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela03"/>
+                                <connections>
+                                    <action selector="tappedGoScreen03Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UXY-wq-8dG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="hpC-9h-OP5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="40y-Sq-LvS"/>
+                            <constraint firstItem="78J-15-6fQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4lY-JH-IVC"/>
+                            <constraint firstItem="78J-15-6fQ" firstAttribute="top" secondItem="hpC-9h-OP5" secondAttribute="bottom" constant="73" id="HPg-EK-MpF"/>
                             <constraint firstItem="hpC-9h-OP5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vgh-Ia-sJ7"/>
                         </constraints>
                     </view>
