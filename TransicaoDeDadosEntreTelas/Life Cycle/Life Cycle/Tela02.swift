@@ -10,26 +10,29 @@ import UIKit
 class Tela02: UIViewController {
     
     
+    
     @IBOutlet weak var nameLabel: UILabel!
     
     
     var name: String = ""
+    var lastName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        nameLabel.text = name
+        nameLabel.text = "\(name) \(lastName)"
 }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    let vc = UIStoryboard(name: "Tela03", bundle: nil).instantiateViewController(withIdentifier: "Tela03") as? Tela03
+    
+    vc?.fullName = nameLabel.text ?? ""
+    
+    navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+    
+   
     }
-    */
+    
 
-}
+
