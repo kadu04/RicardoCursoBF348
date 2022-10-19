@@ -22,19 +22,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckZ-0M-hk8">
                                 <rect key="frame" x="158.33333333333334" y="495" width="73.666666666666657" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78J-15-6fQ">
+                                <rect key="frame" x="157" y="510" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela03"/>
+                                <connections>
+                                    <action selector="tappedGoScreen03Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UXY-wq-8dG"/>
+                                </connections>
+                            </button>
+>>>>>>> TransicaoDeDadosEntreTelas
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
                             <constraint firstItem="hpC-9h-OP5" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="40y-Sq-LvS"/>
+<<<<<<< HEAD
                             <constraint firstItem="ckZ-0M-hk8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dHy-jI-eeN"/>
                             <constraint firstItem="ckZ-0M-hk8" firstAttribute="top" secondItem="hpC-9h-OP5" secondAttribute="bottom" constant="58" id="u0i-iy-lWv"/>
+=======
+                            <constraint firstItem="78J-15-6fQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4lY-JH-IVC"/>
+                            <constraint firstItem="78J-15-6fQ" firstAttribute="top" secondItem="hpC-9h-OP5" secondAttribute="bottom" constant="73" id="HPg-EK-MpF"/>
+>>>>>>> TransicaoDeDadosEntreTelas
                             <constraint firstItem="hpC-9h-OP5" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vgh-Ia-sJ7"/>
                         </constraints>
                     </view>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+>>>>>>> TransicaoDeDadosEntreTelas
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -11,12 +15,20 @@
         <!--Tela03-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
+<<<<<<< HEAD
                 <viewController storyboardIdentifier="Tela03" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Tela03" customModule="Life_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController storyboardIdentifier="Tela03" id="Y6W-OH-hqX" customClass="Tela03" customModule="Life_Cycle" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> TransicaoDeDadosEntreTelas
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PV8-Na-SQj">
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d8-sY-ICs">
+>>>>>>> TransicaoDeDadosEntreTelas
                                 <rect key="frame" x="174" y="411.66666666666669" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -24,6 +36,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+<<<<<<< HEAD
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="PV8-Na-SQj" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jzV-BT-mmy"/>
@@ -32,16 +45,35 @@
                     </view>
                     <connections>
                         <outlet property="tappedGoScreen03Button" destination="PV8-Na-SQj" id="m9z-bk-45S"/>
+=======
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="9d8-sY-ICs" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="J4r-4O-yZT"/>
+                            <constraint firstItem="9d8-sY-ICs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uhS-Zi-Hp0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="9d8-sY-ICs" id="OOq-3V-NKj"/>
+>>>>>>> TransicaoDeDadosEntreTelas
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="131" y="-28"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+=======
+            <point key="canvasLocation" x="73" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> TransicaoDeDadosEntreTelas
         </systemColor>
     </resources>
 </document>

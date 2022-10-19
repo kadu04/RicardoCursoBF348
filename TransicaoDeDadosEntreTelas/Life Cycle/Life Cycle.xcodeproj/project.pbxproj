@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		56C5A6E828FF817900E8E4CB /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5A6E728FF817900E8E4CB /* Tela03.swift */; };
 		56C5A6EA28FF818900E8E4CB /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C5A6E928FF818900E8E4CB /* Tela03.storyboard */; };
+=======
+		56B3506229007995004ECCBC /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B3506129007995004ECCBC /* Tela03.storyboard */; };
+		56B35064290079A5004ECCBC /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B35063290079A5004ECCBC /* Tela03.swift */; };
+>>>>>>> TransicaoDeDadosEntreTelas
 		56DCD42E28FC34B7001987CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD42D28FC34B7001987CA /* AppDelegate.swift */; };
 		56DCD43028FC34B7001987CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD42F28FC34B7001987CA /* SceneDelegate.swift */; };
 		56DCD43228FC34B7001987CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD43128FC34B7001987CA /* ViewController.swift */; };
@@ -20,8 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		56C5A6E728FF817900E8E4CB /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
 		56C5A6E928FF818900E8E4CB /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
+=======
+		56B3506129007995004ECCBC /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
+		56B35063290079A5004ECCBC /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
+>>>>>>> TransicaoDeDadosEntreTelas
 		56DCD42A28FC34B7001987CA /* Life Cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCD42D28FC34B7001987CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DCD42F28FC34B7001987CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,8 +83,13 @@
 				56DCD43B28FC34B8001987CA /* Info.plist */,
 				56DCD44128FC3F30001987CA /* Tela02.swift */,
 				56DCD44328FC3F3F001987CA /* Tela02.storyboard */,
+<<<<<<< HEAD
 				56C5A6E728FF817900E8E4CB /* Tela03.swift */,
 				56C5A6E928FF818900E8E4CB /* Tela03.storyboard */,
+=======
+				56B3506129007995004ECCBC /* Tela03.storyboard */,
+				56B35063290079A5004ECCBC /* Tela03.swift */,
+>>>>>>> TransicaoDeDadosEntreTelas
 			);
 			path = "Life Cycle";
 			sourceTree = "<group>";
@@ -140,7 +155,11 @@
 				56DCD44428FC3F3F001987CA /* Tela02.storyboard in Resources */,
 				56DCD43A28FC34B8001987CA /* LaunchScreen.storyboard in Resources */,
 				56DCD43728FC34B8001987CA /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				56C5A6EA28FF818900E8E4CB /* Tela03.storyboard in Resources */,
+=======
+				56B3506229007995004ECCBC /* Tela03.storyboard in Resources */,
+>>>>>>> TransicaoDeDadosEntreTelas
 				56DCD43528FC34B7001987CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +175,11 @@
 				56DCD42E28FC34B7001987CA /* AppDelegate.swift in Sources */,
 				56DCD43028FC34B7001987CA /* SceneDelegate.swift in Sources */,
 				56DCD44228FC3F30001987CA /* Tela02.swift in Sources */,
+<<<<<<< HEAD
 				56C5A6E828FF817900E8E4CB /* Tela03.swift in Sources */,
+=======
+				56B35064290079A5004ECCBC /* Tela03.swift in Sources */,
+>>>>>>> TransicaoDeDadosEntreTelas
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

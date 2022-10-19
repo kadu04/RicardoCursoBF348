@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     
+    @IBOutlet weak var lastNameTextField: UITextField!
     
     @IBOutlet weak var lastNameTextField: UITextField!
     
@@ -40,7 +41,6 @@ class ViewController: UIViewController {
     
     @IBAction func tappedGoScreen02Button(_ sender: UIButton) {
         
-        
         //     // exibindo modal de maneira programatica
         //        let vc = UIStoryboard(name: "Tela02", bundle: nil).instantiateViewController(withIdentifier: "Tela02")
         //        as? Tela02
@@ -49,7 +49,14 @@ class ViewController: UIViewController {
         
         // exibindo NAVIGATION de maneira programatica
         let vc = UIStoryboard(name: "Tela02", bundle: nil).instantiateViewController(withIdentifier: "Tela02") as? Tela02
+<<<<<<< HEAD
         vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")"
+=======
+        //vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")
+        vc?.name = nameTextField.text ?? ""
+        vc?.lastName = lastNameTextField.text ?? ""
+        
+>>>>>>> TransicaoDeDadosEntreTelas
         
         // o pushViewController ele exibe a tela da controladora
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
