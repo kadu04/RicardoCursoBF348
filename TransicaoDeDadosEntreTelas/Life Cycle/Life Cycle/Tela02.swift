@@ -13,14 +13,12 @@ class Tela02: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
-    
-    var name: String = ""
-    var lastName: String = ""
+    var person: Pessoa?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        nameLabel.text = "\(name) \(lastName)"
+        nameLabel.text = "Nome: \(person?.nome ?? "") \n Sobrenome: \(person?.sobrenome ?? "") \n Idade: \(person?.idade ?? "") \n Profissão: \(person?.profissao ?? "")"
 }
     
 <<<<<<< HEAD
@@ -39,16 +37,19 @@ class Tela02: UIViewController {
 =======
     @IBAction func tappedGoScreen03Button(_ sender: UIButton) {
         
-        let vc = UIStoryboard(name: "Tela03", bundle: nil).instantiateViewController(withIdentifier: "Tela03") as? Tela03
+//        let vc = UIStoryboard(name: "Tela03", bundle: nil).instantiateViewController(withIdentifier: "Tela03") as? Tela03
         //vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")
-        vc?.name = name
-        vc?.lastName = lastName 
+//        vc?.name = name
+//        vc?.lastName = lastName
         
         
         // o pushViewController ele exibe a tela da controladora
-        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        //navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
+<<<<<<< HEAD
     
     
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
 >>>>>>> TransicaoDeDadosEntreTelas
 

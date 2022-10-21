@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		56C5A6E828FF817900E8E4CB /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5A6E728FF817900E8E4CB /* Tela03.swift */; };
 		56C5A6EA28FF818900E8E4CB /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C5A6E928FF818900E8E4CB /* Tela03.storyboard */; };
 =======
 		56B3506229007995004ECCBC /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B3506129007995004ECCBC /* Tela03.storyboard */; };
 		56B35064290079A5004ECCBC /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B35063290079A5004ECCBC /* Tela03.swift */; };
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+		56B3508C2902659D004ECCBC /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B3508B2902659D004ECCBC /* Pessoa.swift */; };
+		56B350982903038C004ECCBC /* Tela03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B350972903038C004ECCBC /* Tela03.swift */; };
+		56B350A0290304E1004ECCBC /* Tela03.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B3509F290304E1004ECCBC /* Tela03.storyboard */; };
 >>>>>>> TransicaoDeDadosEntreTelas
 		56DCD42E28FC34B7001987CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD42D28FC34B7001987CA /* AppDelegate.swift */; };
 		56DCD43028FC34B7001987CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DCD42F28FC34B7001987CA /* SceneDelegate.swift */; };
@@ -26,11 +32,17 @@
 
 /* Begin PBXFileReference section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		56C5A6E728FF817900E8E4CB /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
 		56C5A6E928FF818900E8E4CB /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
 =======
 		56B3506129007995004ECCBC /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
 		56B35063290079A5004ECCBC /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+		56B3508B2902659D004ECCBC /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
+		56B350972903038C004ECCBC /* Tela03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03.swift; sourceTree = "<group>"; };
+		56B3509F290304E1004ECCBC /* Tela03.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03.storyboard; sourceTree = "<group>"; };
 >>>>>>> TransicaoDeDadosEntreTelas
 		56DCD42A28FC34B7001987CA /* Life Cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DCD42D28FC34B7001987CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56B3508A2902657A004ECCBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56B3508B2902659D004ECCBC /* Pessoa.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		56DCD42128FC34B7001987CA = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +94,7 @@
 		56DCD42C28FC34B7001987CA /* Life Cycle */ = {
 			isa = PBXGroup;
 			children = (
+				56B3508A2902657A004ECCBC /* Model */,
 				56DCD42D28FC34B7001987CA /* AppDelegate.swift */,
 				56DCD42F28FC34B7001987CA /* SceneDelegate.swift */,
 				56DCD43128FC34B7001987CA /* ViewController.swift */,
@@ -84,11 +105,16 @@
 				56DCD44128FC3F30001987CA /* Tela02.swift */,
 				56DCD44328FC3F3F001987CA /* Tela02.storyboard */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				56C5A6E728FF817900E8E4CB /* Tela03.swift */,
 				56C5A6E928FF818900E8E4CB /* Tela03.storyboard */,
 =======
 				56B3506129007995004ECCBC /* Tela03.storyboard */,
 				56B35063290079A5004ECCBC /* Tela03.swift */,
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+				56B350972903038C004ECCBC /* Tela03.swift */,
+				56B3509F290304E1004ECCBC /* Tela03.storyboard */,
 >>>>>>> TransicaoDeDadosEntreTelas
 			);
 			path = "Life Cycle";
@@ -156,9 +182,13 @@
 				56DCD43A28FC34B8001987CA /* LaunchScreen.storyboard in Resources */,
 				56DCD43728FC34B8001987CA /* Assets.xcassets in Resources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				56C5A6EA28FF818900E8E4CB /* Tela03.storyboard in Resources */,
 =======
 				56B3506229007995004ECCBC /* Tela03.storyboard in Resources */,
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+				56B350A0290304E1004ECCBC /* Tela03.storyboard in Resources */,
 >>>>>>> TransicaoDeDadosEntreTelas
 				56DCD43528FC34B7001987CA /* Main.storyboard in Resources */,
 			);
@@ -173,12 +203,17 @@
 			files = (
 				56DCD43228FC34B7001987CA /* ViewController.swift in Sources */,
 				56DCD42E28FC34B7001987CA /* AppDelegate.swift in Sources */,
+				56B350982903038C004ECCBC /* Tela03.swift in Sources */,
 				56DCD43028FC34B7001987CA /* SceneDelegate.swift in Sources */,
 				56DCD44228FC3F30001987CA /* Tela02.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD
 				56C5A6E828FF817900E8E4CB /* Tela03.swift in Sources */,
 =======
 				56B35064290079A5004ECCBC /* Tela03.swift in Sources */,
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+				56B3508C2902659D004ECCBC /* Pessoa.swift in Sources */,
 >>>>>>> TransicaoDeDadosEntreTelas
 			);
 			runOnlyForDeploymentPostprocessing = 0;

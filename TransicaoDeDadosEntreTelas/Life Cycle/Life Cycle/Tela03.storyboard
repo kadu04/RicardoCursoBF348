@@ -12,9 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tela03-->
+        <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <viewController storyboardIdentifier="Tela03" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Tela03" customModule="Life_Cycle" customModuleProvider="target" sceneMemberID="viewController">
 =======
@@ -56,6 +57,15 @@
                         <outlet property="nameLabel" destination="9d8-sY-ICs" id="OOq-3V-NKj"/>
 >>>>>>> TransicaoDeDadosEntreTelas
                     </connections>
+=======
+                <viewController storyboardIdentifier="Tela03" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+>>>>>>> TransicaoDeDadosEntreTelas
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,8 +81,13 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 >>>>>>> TransicaoDeDadosEntreTelas
         </systemColor>
     </resources>

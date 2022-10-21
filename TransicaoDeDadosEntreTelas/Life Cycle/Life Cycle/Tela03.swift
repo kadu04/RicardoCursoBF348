@@ -3,14 +3,19 @@
 //  Life Cycle
 //
 <<<<<<< HEAD
+<<<<<<< HEAD
 //  Created by Ricardo Massaki on 18/10/22.
 =======
 //  Created by Ricardo Massaki on 19/10/22.
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+//  Created by Ricardo Massaki on 21/10/22.
 >>>>>>> TransicaoDeDadosEntreTelas
 //
 
 import UIKit
 
+<<<<<<< HEAD
 class Tela03: UIViewController {
     
     
@@ -33,17 +38,24 @@ class Tela03: UIViewController {
     
     var name: String = ""
     var lastName: String = ""
+=======
+class Tela03: UITableViewCell {
+>>>>>>> TransicaoDeDadosEntreTelas
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        nameLabel.text = "\(name) \(lastName)"
-
-
-        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
-    
 
+<<<<<<< HEAD
    
+>>>>>>> TransicaoDeDadosEntreTelas
+=======
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
 >>>>>>> TransicaoDeDadosEntreTelas
 
 }

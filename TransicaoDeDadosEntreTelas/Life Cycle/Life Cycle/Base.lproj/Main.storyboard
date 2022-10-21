@@ -17,21 +17,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcS-Dj-vDb">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="157.66666666666666" y="427" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="tappedGoScreen02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6c-a4-cUj"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NDG-Oi-7Uu">
+                                <rect key="frame" x="12" y="116" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrenome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45Q-GF-eXj">
+                                <rect key="frame" x="12" y="175" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Idade:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-6e-3yX">
+                                <rect key="frame" x="12" y="234" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Profissão:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njt-v0-QMC">
+                                <rect key="frame" x="12" y="293" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIn-iS-VHc">
-                                <rect key="frame" x="157.66666666666666" y="489.66666666666669" width="75" height="35.000000000000057"/>
+                                <rect key="frame" x="157.66666666666666" y="512" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="tappedGoScreen03Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="grD-rj-wxh"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX5-ha-yu5">
                                 <rect key="frame" x="12" y="111" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -64,10 +85,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+=======
+>>>>>>> TransicaoDeDadosEntreTelas
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sxb-SP-OR0" secondAttribute="trailing" constant="12" id="1gN-ea-gfu"/>
                             <constraint firstItem="Sxb-SP-OR0" firstAttribute="leading" secondItem="kg9-ih-8d3" secondAttribute="leading" id="2OX-rN-u1r"/>
                             <constraint firstItem="kg9-ih-8d3" firstAttribute="top" secondItem="hYH-sh-6fu" secondAttribute="bottom" constant="16" id="4nL-bS-4Sm"/>
@@ -91,16 +115,43 @@
                             <constraint firstItem="mX5-ha-yu5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ju7-sm-f6X"/>
                             <constraint firstItem="sIn-iS-VHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oKc-Hb-4jS"/>
                             <constraint firstItem="sIn-iS-VHc" firstAttribute="top" secondItem="DcS-Dj-vDb" secondAttribute="bottom" constant="50" id="qgM-Qw-d7s"/>
+=======
+                            <constraint firstItem="sIn-iS-VHc" firstAttribute="top" secondItem="DcS-Dj-vDb" secondAttribute="bottom" constant="50" id="5ie-Hg-MRv"/>
+                            <constraint firstItem="PZB-6e-3yX" firstAttribute="leading" secondItem="45Q-GF-eXj" secondAttribute="leading" id="7v8-8j-2Lw"/>
+                            <constraint firstItem="DcS-Dj-vDb" firstAttribute="top" secondItem="njt-v0-QMC" secondAttribute="bottom" constant="100" id="809-B6-cuE"/>
+                            <constraint firstItem="njt-v0-QMC" firstAttribute="top" secondItem="PZB-6e-3yX" secondAttribute="bottom" constant="25" id="DRu-1m-377"/>
+                            <constraint firstItem="NDG-Oi-7Uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="FpY-N1-sD6"/>
+                            <constraint firstItem="njt-v0-QMC" firstAttribute="trailing" secondItem="PZB-6e-3yX" secondAttribute="trailing" id="GMb-qC-B1x"/>
+                            <constraint firstItem="NDG-Oi-7Uu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="HAJ-ww-deK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NDG-Oi-7Uu" secondAttribute="trailing" constant="12" id="IRh-7Z-uGV"/>
+                            <constraint firstItem="45Q-GF-eXj" firstAttribute="leading" secondItem="NDG-Oi-7Uu" secondAttribute="leading" id="Osk-Ez-V6F"/>
+                            <constraint firstItem="njt-v0-QMC" firstAttribute="leading" secondItem="PZB-6e-3yX" secondAttribute="leading" id="P0f-Ey-ROz"/>
+                            <constraint firstItem="NDG-Oi-7Uu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="TNK-ge-RMr"/>
+                            <constraint firstItem="PZB-6e-3yX" firstAttribute="top" secondItem="45Q-GF-eXj" secondAttribute="bottom" constant="25" id="UEa-v5-fO8"/>
+                            <constraint firstItem="PZB-6e-3yX" firstAttribute="trailing" secondItem="45Q-GF-eXj" secondAttribute="trailing" id="Y4I-3K-S4o"/>
+                            <constraint firstItem="45Q-GF-eXj" firstAttribute="top" secondItem="NDG-Oi-7Uu" secondAttribute="bottom" constant="25" id="Zts-mR-Apa"/>
+                            <constraint firstItem="DcS-Dj-vDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cxO-LZ-Uk9"/>
+                            <constraint firstItem="45Q-GF-eXj" firstAttribute="trailing" secondItem="NDG-Oi-7Uu" secondAttribute="trailing" id="gsO-1O-cTg"/>
+                            <constraint firstItem="sIn-iS-VHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o1L-DH-ThJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NDG-Oi-7Uu" secondAttribute="trailing" constant="12" id="xc5-6w-Vne"/>
+>>>>>>> TransicaoDeDadosEntreTelas
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="Cq1-nU-aL5"/>
                     <connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <outlet property="lastNameTextField" destination="oOu-OD-Zuq" id="9Tc-Yd-A6Z"/>
 =======
                         <outlet property="lastNameTextField" destination="Sxb-SP-OR0" id="P8j-eB-i8d"/>
 >>>>>>> TransicaoDeDadosEntreTelas
                         <outlet property="nameTextField" destination="hYH-sh-6fu" id="iMV-J9-vbW"/>
+=======
+                        <outlet property="ageTextField" destination="PZB-6e-3yX" id="I9X-tV-zzj"/>
+                        <outlet property="lastNameTextField" destination="45Q-GF-eXj" id="j6H-Ei-Kls"/>
+                        <outlet property="nameTextField" destination="NDG-Oi-7Uu" id="E0m-qU-nFl"/>
+                        <outlet property="profissionTextField" destination="njt-v0-QMC" id="c4H-V1-lyC"/>
+>>>>>>> TransicaoDeDadosEntreTelas
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
