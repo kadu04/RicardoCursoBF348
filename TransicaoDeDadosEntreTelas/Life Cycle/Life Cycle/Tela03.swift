@@ -2,28 +2,22 @@
 //  Tela03.swift
 //  Life Cycle
 //
-//  Created by Ricardo Massaki on 19/10/22.
+//  Created by Ricardo Massaki on 21/10/22.
 //
 
 import UIKit
 
-class Tela03: UIViewController {
-    
-    
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    var name: String = ""
-    var lastName: String = ""
+class Tela03: UITableViewCell {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        nameLabel.text = "\(name) \(lastName)"
-
-
-        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
-    
 
-   
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
 
 }

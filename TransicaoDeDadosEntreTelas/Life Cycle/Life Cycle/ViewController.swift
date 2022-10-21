@@ -13,10 +13,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lastNameTextField: UITextField!
     
+    @IBOutlet weak var ageTextField: UITextField!
+    
+    @IBOutlet weak var profissionTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(#function)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +39,6 @@ class ViewController: UIViewController {
         print(#function)
     }
     
-    
     @IBAction func tappedGoScreen02Button(_ sender: UIButton) {
         
         //     // exibindo modal de maneira programatica
@@ -46,21 +49,18 @@ class ViewController: UIViewController {
         
         // exibindo NAVIGATION de maneira programatica
         let vc = UIStoryboard(name: "Tela02", bundle: nil).instantiateViewController(withIdentifier: "Tela02") as? Tela02
-        //vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")
-        vc?.name = nameTextField.text ?? ""
-        vc?.lastName = lastNameTextField.text ?? ""
         
+        vc?.person = Pessoa(nome: nameTextField.text ?? "", sobrenome: lastNameTextField.text ?? "", idade: ageTextField.text ?? "", profissao: profissionTextField.text ?? "")
         
         // o pushViewController ele exibe a tela da controladora
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
     
-    
     @IBAction func tappedGoScreen03Button(_ sender: UIButton) {
+        
     }
     
 }
 
-    
 
 
