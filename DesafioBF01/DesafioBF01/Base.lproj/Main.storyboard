@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrtenome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w55-XG-Ex0">
-                                <rect key="frame" x="15" y="206" width="360" height="45"/>
+                                <rect key="frame" x="15" y="201" width="360" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="eyG-mo-59r"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Idade:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bh4-Eh-vcW">
-                                <rect key="frame" x="15" y="283" width="360" height="45"/>
+                                <rect key="frame" x="15" y="271" width="360" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="jMh-yR-2oz"/>
                                 </constraints>
@@ -41,7 +41,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Profissão:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iLD-DR-cic">
-                                <rect key="frame" x="15" y="355" width="360" height="45"/>
+                                <rect key="frame" x="15" y="341" width="360" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="7Fz-mr-HlW"/>
                                 </constraints>
@@ -49,7 +49,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-LR-dSk">
-                                <rect key="frame" x="158" y="465" width="75" height="35"/>
+                                <rect key="frame" x="158" y="451" width="75" height="35"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -61,9 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="iLD-DR-cic" firstAttribute="top" secondItem="Bh4-Eh-vcW" secondAttribute="bottom" constant="27" id="3qF-Da-asP"/>
+                            <constraint firstItem="iLD-DR-cic" firstAttribute="top" secondItem="Bh4-Eh-vcW" secondAttribute="bottom" constant="25" id="3qF-Da-asP"/>
                             <constraint firstItem="iLD-DR-cic" firstAttribute="trailing" secondItem="Bh4-Eh-vcW" secondAttribute="trailing" id="6Kh-Rl-C9N"/>
-                            <constraint firstItem="w55-XG-Ex0" firstAttribute="top" secondItem="GlL-eO-esa" secondAttribute="bottom" constant="30" id="6oN-sF-IV8"/>
+                            <constraint firstItem="w55-XG-Ex0" firstAttribute="top" secondItem="GlL-eO-esa" secondAttribute="bottom" constant="25" id="6oN-sF-IV8"/>
                             <constraint firstItem="GlL-eO-esa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="FLI-Mf-ehj"/>
                             <constraint firstItem="w55-XG-Ex0" firstAttribute="trailing" secondItem="GlL-eO-esa" secondAttribute="trailing" id="MqT-al-LcI"/>
                             <constraint firstItem="JUw-LR-dSk" firstAttribute="leading" secondItem="iLD-DR-cic" secondAttribute="trailing" constant="-217" id="Ssy-vF-Zag"/>
@@ -74,7 +74,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GlL-eO-esa" secondAttribute="trailing" constant="15" id="lpY-US-enX"/>
                             <constraint firstItem="Bh4-Eh-vcW" firstAttribute="trailing" secondItem="w55-XG-Ex0" secondAttribute="trailing" id="mRk-w7-Bnq"/>
                             <constraint firstItem="Bh4-Eh-vcW" firstAttribute="leading" secondItem="w55-XG-Ex0" secondAttribute="leading" id="pXH-tQ-Iyw"/>
-                            <constraint firstItem="Bh4-Eh-vcW" firstAttribute="top" secondItem="w55-XG-Ex0" secondAttribute="bottom" constant="32" id="tXk-Do-Lon"/>
+                            <constraint firstItem="Bh4-Eh-vcW" firstAttribute="top" secondItem="w55-XG-Ex0" secondAttribute="bottom" constant="25" id="tXk-Do-Lon"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="hs7-X0-qLF"/>
