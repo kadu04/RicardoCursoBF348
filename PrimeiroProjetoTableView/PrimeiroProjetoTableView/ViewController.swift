@@ -7,6 +7,15 @@
 
 import UIKit
 
+// Passo a Passo
+// Criar a TableView
+// Fazer a ligação
+// Configurar a TableView
+// Criar a celula
+// Configurar celula
+
+
+
 class ViewController: UIViewController {
     
     
