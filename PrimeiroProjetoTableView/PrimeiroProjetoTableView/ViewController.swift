@@ -13,6 +13,8 @@ import UIKit
 // Configurar a TableView
 // Criar a celula
 // Configurar celula
+// Registrar a celula
+// Configurar exibição da celula
 
 
 
@@ -43,11 +45,10 @@ extension ViewController: UITableViewDataSource {
         return data.count
     }
     
-    
     //Popular a celula
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NameTableViewCell.identifier, for: indexPath) as? NameTableViewCell
-        
+        print(indexPath.row)
         cell?.setupCell(name: data[indexPath.row])
         return cell ?? UITableViewCell()
     }
