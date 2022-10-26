@@ -43,7 +43,7 @@
                 <outlet property="brandLabel" destination="WjU-fX-yVo" id="jHM-VE-WNa"/>
                 <outlet property="carImageView" destination="3bF-A2-goI" id="lkb-KO-I0D"/>
             </connections>
-            <point key="canvasLocation" x="127.69230769230769" y="-4.62085308056872"/>
+            <point key="canvasLocation" x="77" y="-7"/>
         </tableViewCell>
     </objects>
 </document>
