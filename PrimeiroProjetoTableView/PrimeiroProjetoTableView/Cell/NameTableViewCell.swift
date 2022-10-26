@@ -31,7 +31,7 @@ class NameTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
+    // user: User
     func setupCell(name: String) {
         nameLabel.text = name
         
@@ -39,3 +39,5 @@ class NameTableViewCell: UITableViewCell {
     
 }
 
+//image: UIImage) {
+//imageview.image = image

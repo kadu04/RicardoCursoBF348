@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var data: [String] = ["Caio", "Felipe", "Jean", "Lucas", "Andressa"]
+    var data: [String] = ["Caio", "Felipe", "Lucas", "Jean", "Andressa"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ extension ViewController: UITableViewDataSource {
     //Popular a celula
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NameTableViewCell.identifier, for: indexPath) as? NameTableViewCell
-        print(indexPath.row)
+      
         cell?.setupCell(name: data[indexPath.row])
         return cell ?? UITableViewCell()
     }
@@ -56,6 +56,9 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    
+    
     
 }
 
