@@ -44,7 +44,7 @@
                 <outlet property="faceImageView" destination="fEE-aS-M6J" id="LUc-AW-0aJ"/>
                 <outlet property="nameLabel" destination="9Ne-UV-U3j" id="eQh-RQ-dG7"/>
             </connections>
-            <point key="canvasLocation" x="20" y="-60.071090047393362"/>
+            <point key="canvasLocation" x="237" y="-47"/>
         </tableViewCell>
     </objects>
     <resources>
