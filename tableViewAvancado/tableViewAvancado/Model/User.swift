@@ -6,10 +6,10 @@
 //
 
 import Foundation
-
+//2-
 import UIKit
 
-
+//2-
 struct User {
     var name: String
     var image: UIImage

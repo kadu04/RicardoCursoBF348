@@ -8,7 +8,7 @@
 import UIKit
 
 class NameTableViewCell01: UITableViewCell {
-    
+    //7- Criar célula e fazer ligações
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -22,7 +22,7 @@ class NameTableViewCell01: UITableViewCell {
     @IBOutlet weak var tappedHeartButton: UIButton!
     
     
-    
+    //8-
     static let identifier: String = "NameTableViewCell01"
         
         static func nib() -> UINib{
@@ -31,9 +31,10 @@ class NameTableViewCell01: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        //9-
         selectionStyle = .none
     }
-
+    //9-
     func setupCell(data: Employee) {
         self.userImageView.image = data.image
         self.nameLabel.text = "Nome: \(data.name)"
@@ -47,7 +48,7 @@ class NameTableViewCell01: UITableViewCell {
             self.tappedHeartButton.tintColor = .blue        }
         
     }
-    
+    //7-
     @IBAction func tappedHeartButton(_ sender: UIButton) {
         
     }
