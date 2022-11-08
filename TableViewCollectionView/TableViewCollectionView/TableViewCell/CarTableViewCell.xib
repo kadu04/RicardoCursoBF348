@@ -24,7 +24,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-Us-LWr">
-                        <rect key="frame" x="0.0" y="170.33333333333334" width="436" height="84.666666666666657"/>
+                        <rect key="frame" x="0.0" y="65" width="436" height="190"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7v2-Rl-mWd">
                             <size key="itemSize" width="128" height="128"/>
@@ -39,9 +39,9 @@
             <constraints>
                 <constraint firstItem="Qf8-vq-uvj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="BuI-8U-Jv5"/>
                 <constraint firstAttribute="trailing" secondItem="DSK-Us-LWr" secondAttribute="trailing" id="ENT-YV-Pba"/>
+                <constraint firstItem="DSK-Us-LWr" firstAttribute="top" secondItem="Qf8-vq-uvj" secondAttribute="bottom" constant="24.666666666666671" id="GJb-5t-YIT"/>
                 <constraint firstAttribute="bottom" secondItem="DSK-Us-LWr" secondAttribute="bottom" id="LGU-q7-5Bo"/>
                 <constraint firstItem="DSK-Us-LWr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MGf-Rc-2kc"/>
-                <constraint firstItem="DSK-Us-LWr" firstAttribute="top" secondItem="Qf8-vq-uvj" secondAttribute="bottom" constant="130" id="Mik-4j-Bho"/>
                 <constraint firstAttribute="trailing" secondItem="Qf8-vq-uvj" secondAttribute="trailing" constant="20" id="wI9-cI-wI6"/>
                 <constraint firstItem="Qf8-vq-uvj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="zkR-LZ-nzH"/>
             </constraints>
@@ -50,7 +50,7 @@
                 <outlet property="collectionLabel" destination="DSK-Us-LWr" id="tf2-jF-FJo"/>
                 <outlet property="titleLabel" destination="Qf8-vq-uvj" id="pn5-P3-Bb1"/>
             </connections>
-            <point key="canvasLocation" x="212" y="7"/>
+            <point key="canvasLocation" x="427.69230769230768" y="-82.109004739336484"/>
         </collectionViewCell>
     </objects>
     <resources>
