@@ -13,8 +13,8 @@
 		56577E722919E56C00023A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577E702919E56C00023A33 /* Main.storyboard */; };
 		56577E742919E56D00023A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56577E732919E56D00023A33 /* Assets.xcassets */; };
 		56577E772919E56D00023A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577E752919E56D00023A33 /* LaunchScreen.storyboard */; };
-		56577E812919E75100023A33 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577E7F2919E75100023A33 /* CarTableViewCell.swift */; };
-		56577E822919E75100023A33 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56577E802919E75100023A33 /* CarTableViewCell.xib */; };
+		56577E86291A806F00023A33 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577E84291A806F00023A33 /* CarTableViewCell.swift */; };
+		56577E87291A806F00023A33 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56577E85291A806F00023A33 /* CarTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +26,8 @@
 		56577E732919E56D00023A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56577E762919E56D00023A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56577E782919E56D00023A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56577E7F2919E75100023A33 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
-		56577E802919E75100023A33 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		56577E84291A806F00023A33 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		56577E85291A806F00023A33 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		56577E692919E56C00023A33 /* TableViewCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				56577E7E2919E72000023A33 /* TableViewCell */,
+				56577E83291A800300023A33 /* TableViewCell */,
 				56577E6A2919E56C00023A33 /* AppDelegate.swift */,
 				56577E6C2919E56C00023A33 /* SceneDelegate.swift */,
 				56577E6E2919E56C00023A33 /* ViewController.swift */,
@@ -72,11 +72,11 @@
 			path = TableViewCollectionView;
 			sourceTree = "<group>";
 		};
-		56577E7E2919E72000023A33 /* TableViewCell */ = {
+		56577E83291A800300023A33 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				56577E7F2919E75100023A33 /* CarTableViewCell.swift */,
-				56577E802919E75100023A33 /* CarTableViewCell.xib */,
+				56577E84291A806F00023A33 /* CarTableViewCell.swift */,
+				56577E85291A806F00023A33 /* CarTableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			files = (
 				56577E772919E56D00023A33 /* LaunchScreen.storyboard in Resources */,
 				56577E742919E56D00023A33 /* Assets.xcassets in Resources */,
-				56577E822919E75100023A33 /* CarTableViewCell.xib in Resources */,
+				56577E87291A806F00023A33 /* CarTableViewCell.xib in Resources */,
 				56577E722919E56C00023A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +155,7 @@
 			files = (
 				56577E6F2919E56C00023A33 /* ViewController.swift in Sources */,
 				56577E6B2919E56C00023A33 /* AppDelegate.swift in Sources */,
-				56577E812919E75100023A33 /* CarTableViewCell.swift in Sources */,
+				56577E86291A806F00023A33 /* CarTableViewCell.swift in Sources */,
 				56577E6D2919E56C00023A33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
