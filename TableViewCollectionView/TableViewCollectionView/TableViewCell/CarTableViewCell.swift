@@ -22,7 +22,10 @@ class CarTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func setupCell(nameImage: String) {
+        collectionView.image = UIImage(named: nameImage)
     }
 
     
