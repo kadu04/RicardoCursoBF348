@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     //28- criar o array, a lista de imagens
     var listImage: [String] = ["car1", "car2", "car3", "car4", "car5", "car6"]
+    var listImage2: [String] = ["moto1", "moto2", "moto3", "moto4", "moto5", "moto6"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         //24-
-        tableView.separatorStyle = .none
+        //tableView.separatorStyle = .none
         //25- registrar
         tableView.register(CarTableViewCell.nib(), forCellReuseIdentifier: CarTableViewCell.identifier)
         
@@ -41,24 +42,26 @@ extension ViewController: UITableViewDelegate {
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //26-
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //27
-        let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
-        cell?.setupCell(title: "Veículos", listImage: self.listImage)
-        return UITableViewCell()
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
+            cell?.setupCell(name: listImage, title: "Carro")
+            return cell ?? UITableViewCell()
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
+            cell?.setupCell(name: listImage2, title: "Motocicleta")
+            return cell ?? UITableViewCell()
+        }
     }
-    
-    //29-
+        
+        //29-
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 364
     }
     
 }
-    
-    
-
-
 

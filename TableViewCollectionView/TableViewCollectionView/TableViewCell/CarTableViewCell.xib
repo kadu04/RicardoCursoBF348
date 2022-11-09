@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="180" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="TableViewCollectionView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="351" height="181"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="392" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="TableViewCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="393"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="351" height="181"/>
+                <rect key="frame" x="0.0" y="0.0" width="351" height="393"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veículos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t24-a7-git">
@@ -23,11 +23,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2wL-G9-dy2">
-                        <rect key="frame" x="0.0" y="51" width="351" height="130"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2wL-G9-dy2">
+                        <rect key="frame" x="0.0" y="93" width="351" height="300"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="130" id="6Cy-JZ-umK"/>
+                            <constraint firstAttribute="height" constant="300" id="6Cy-JZ-umK"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rig-7U-qo6">
                             <size key="itemSize" width="128" height="128"/>
@@ -50,7 +50,7 @@
                 <outlet property="collectionView" destination="2wL-G9-dy2" id="HEi-O9-GKJ"/>
                 <outlet property="titleLabel" destination="t24-a7-git" id="oMo-OC-MZg"/>
             </connections>
-            <point key="canvasLocation" x="101" y="-30"/>
+            <point key="canvasLocation" x="108" y="28"/>
         </tableViewCell>
     </objects>
     <resources>

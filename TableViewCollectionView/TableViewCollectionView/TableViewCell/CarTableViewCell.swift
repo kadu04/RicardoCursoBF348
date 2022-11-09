@@ -21,65 +21,71 @@ class CarTableViewCell: UITableViewCell {
         return UINib(nibName: identifier, bundle: nil)
     }
     
+    var data: [String] = []
+    
+    
     //6- colocar o nome no identifier na Xib
     
     
-    //18-
-    var listImage:[String] = []
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
         //10-
         configCollectionView()
     }
     
     //8-
-    private func configCollectionView() {
+    func configCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.estimatedItemSize = .zero
+        collectionView.collectionViewLayout = layout
         //16- qdo criamos uma célula, temos que registra-la
         collectionView.register(CustomCollectionViewCell.nib(), forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
         //11-
-        if let layout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
-            layout.estimatedItemSize = .zero
-        }
+        
     }
     
-    //17- criar o setup
-    public func setupCell(title: String,listImage:[String]) {
+    //17-18- criar o setup
+    func setupCell(name: [String], title: String) {
+        self.data = name
         self.titleLabel.text = title
-        //19-
-        self.listImage = listImage
-        
     }
     
 }
 
 //9-
-extension CarTableViewCell:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+
+extension CarTableViewCell: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 300)
+    }
+    
+}
+
+extension CarTableViewCell:UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return 0
         //20-
-        return self.listImage.count
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //21-
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell
-        cell?.setupCell(nameImage: self.listImage[indexPath.row])
-        //return UICollectionViewCell()
+        cell?.setupCell(nameImage: data[indexPath.row])
         //22-
         return cell ?? UICollectionViewCell()
+        
     }
-    
-    //23-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.contentView.frame.width, height: collectionView.frame.height)
-    }
-    
 }
+
+
+
         
     
 
