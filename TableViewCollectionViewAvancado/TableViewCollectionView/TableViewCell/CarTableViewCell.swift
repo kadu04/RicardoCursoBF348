@@ -49,9 +49,9 @@ class CarTableViewCell: UITableViewCell {
     }
     
     //17-18- criar o setup
-    func setupCell(name: [String], title: String) {
-        self.data = name
-        self.titleLabel.text = title
+    func setupCell(data: Vehicle) {
+        self.data = data.list
+        self.titleLabel.text = data.title
     }
     
 }
@@ -80,8 +80,8 @@ extension CarTableViewCell:UICollectionViewDataSource {
         cell?.setupCell(nameImage: data[indexPath.row])
         //22-
         return cell ?? UICollectionViewCell()
-        
     }
+    
 }
 
 

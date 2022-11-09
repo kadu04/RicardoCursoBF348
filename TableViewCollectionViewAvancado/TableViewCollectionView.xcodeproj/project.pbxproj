@@ -17,6 +17,7 @@
 		56577E87291A806F00023A33 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56577E85291A806F00023A33 /* CarTableViewCell.xib */; };
 		56577E8B291AD35000023A33 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577E89291AD35000023A33 /* CustomCollectionViewCell.swift */; };
 		56577E8C291AD35000023A33 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56577E8A291AD35000023A33 /* CustomCollectionViewCell.xib */; };
+		56577E98291BFD6000023A33 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577E97291BFD6000023A33 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		56577E85291A806F00023A33 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		56577E89291AD35000023A33 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		56577E8A291AD35000023A33 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		56577E97291BFD6000023A33 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		56577E692919E56C00023A33 /* TableViewCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				56577E96291BFD0400023A33 /* Model */,
 				56577E88291AD2CF00023A33 /* CollectionViewCell */,
 				56577E83291A800300023A33 /* TableViewCell */,
 				56577E6A2919E56C00023A33 /* AppDelegate.swift */,
@@ -93,6 +96,14 @@
 				56577E8A291AD35000023A33 /* CustomCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		56577E96291BFD0400023A33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56577E97291BFD6000023A33 /* Vehicle.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56577E98291BFD6000023A33 /* Vehicle.swift in Sources */,
 				56577E6F2919E56C00023A33 /* ViewController.swift in Sources */,
 				56577E8B291AD35000023A33 /* CustomCollectionViewCell.swift in Sources */,
 				56577E6B2919E56C00023A33 /* AppDelegate.swift in Sources */,
