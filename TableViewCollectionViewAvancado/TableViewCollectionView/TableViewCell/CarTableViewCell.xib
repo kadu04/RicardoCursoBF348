@@ -50,7 +50,7 @@
                 <outlet property="collectionView" destination="2wL-G9-dy2" id="HEi-O9-GKJ"/>
                 <outlet property="titleLabel" destination="t24-a7-git" id="oMo-OC-MZg"/>
             </connections>
-            <point key="canvasLocation" x="108" y="28"/>
+            <point key="canvasLocation" x="264" y="17"/>
         </tableViewCell>
     </objects>
     <resources>
