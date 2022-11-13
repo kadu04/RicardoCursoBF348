@@ -32,7 +32,7 @@
             <connections>
                 <outlet property="carImageView" destination="H7t-if-hAr" id="Dmb-Fl-C5t"/>
             </connections>
-            <point key="canvasLocation" x="-363" y="-52"/>
+            <point key="canvasLocation" x="38" y="-30"/>
         </collectionViewCell>
     </objects>
 </document>
