@@ -13,7 +13,7 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
         configTabBar()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     func configItems() {

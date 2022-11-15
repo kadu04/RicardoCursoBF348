@@ -15,8 +15,8 @@
 		562867E9291EE512004860C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562867E8291EE512004860C4 /* Assets.xcassets */; };
 		562867EC291EE512004860C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562867EA291EE512004860C4 /* LaunchScreen.storyboard */; };
 		562867F4291EEB10004860C4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562867F3291EEB10004860C4 /* TabBarController.swift */; };
-		56286802292128CB004860C4 /* TableViewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56286800292128CB004860C4 /* TableViewViewCell.swift */; };
-		56286803292128CB004860C4 /* TableViewViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56286801292128CB004860C4 /* TableViewViewCell.xib */; };
+		56286802292128CB004860C4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56286800292128CB004860C4 /* TableViewCell.swift */; };
+		56286803292128CB004860C4 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56286801292128CB004860C4 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		562867EB291EE512004860C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		562867ED291EE512004860C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		562867F3291EEB10004860C4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		56286800292128CB004860C4 /* TableViewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewCell.swift; sourceTree = "<group>"; };
-		56286801292128CB004860C4 /* TableViewViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewViewCell.xib; sourceTree = "<group>"; };
+		56286800292128CB004860C4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		56286801292128CB004860C4 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +78,10 @@
 				562867E1291EE511004860C4 /* SceneDelegate.swift */,
 				562867E3291EE511004860C4 /* Tela01ViewController.swift */,
 				562867E5291EE511004860C4 /* Main.storyboard */,
+				562867F3291EEB10004860C4 /* TabBarController.swift */,
 				562867E8291EE512004860C4 /* Assets.xcassets */,
 				562867EA291EE512004860C4 /* LaunchScreen.storyboard */,
 				562867ED291EE512004860C4 /* Info.plist */,
-				562867F3291EEB10004860C4 /* TabBarController.swift */,
 			);
 			path = ProjeetoTabBar;
 			sourceTree = "<group>";
@@ -89,8 +89,8 @@
 		562867FF29212883004860C4 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				56286800292128CB004860C4 /* TableViewViewCell.swift */,
-				56286801292128CB004860C4 /* TableViewViewCell.xib */,
+				56286800292128CB004860C4 /* TableViewCell.swift */,
+				56286801292128CB004860C4 /* TableViewCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			files = (
 				562867EC291EE512004860C4 /* LaunchScreen.storyboard in Resources */,
 				562867E9291EE512004860C4 /* Assets.xcassets in Resources */,
-				56286803292128CB004860C4 /* TableViewViewCell.xib in Resources */,
+				56286803292128CB004860C4 /* TableViewCell.xib in Resources */,
 				562867E7291EE511004860C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +169,7 @@
 			files = (
 				562867E4291EE511004860C4 /* Tela01ViewController.swift in Sources */,
 				562867F4291EEB10004860C4 /* TabBarController.swift in Sources */,
-				56286802292128CB004860C4 /* TableViewViewCell.swift in Sources */,
+				56286802292128CB004860C4 /* TableViewCell.swift in Sources */,
 				562867E0291EE511004860C4 /* AppDelegate.swift in Sources */,
 				562867E2291EE511004860C4 /* SceneDelegate.swift in Sources */,
 				5611C90829212B5D00EB88A0 /* User.swift in Sources */,

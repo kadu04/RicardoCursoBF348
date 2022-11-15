@@ -11,7 +11,7 @@
         <!--Tela 02-->
         <scene sceneID="HuD-bS-ht2">
             <objects>
-                <viewController id="mys-TQ-ty3" sceneMemberID="viewController">
+                <viewController id="mys-TQ-ty3" customClass="Tela02ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X15-1F-2zG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +127,7 @@
         <!--Tela 03-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjeetoTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Tela03ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

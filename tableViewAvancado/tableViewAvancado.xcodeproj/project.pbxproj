@@ -70,9 +70,9 @@
 			children = (
 				56ED742A290B510C0052BE88 /* Model */,
 				56ED7438290B9ECF0052BE88 /* CellGroup */,
-				56ED740F290B4C610052BE88 /* AppDelegate.swift */,
-				56ED7411290B4C610052BE88 /* SceneDelegate.swift */,
 				56ED7413290B4C610052BE88 /* ViewController.swift */,
+				56ED7411290B4C610052BE88 /* SceneDelegate.swift */,
+				56ED740F290B4C610052BE88 /* AppDelegate.swift */,
 				56ED7415290B4C610052BE88 /* Main.storyboard */,
 				56ED7418290B4C640052BE88 /* Assets.xcassets */,
 				56ED741A290B4C640052BE88 /* LaunchScreen.storyboard */,
