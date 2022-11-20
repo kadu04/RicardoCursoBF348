@@ -25,6 +25,8 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        //14- mudar cor da imagem do personImageView
+        personImageView.tintColor = .black
         //4-
         selectionStyle = .none
     }

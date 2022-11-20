@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="eju-3f-GZe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eju-3f-GZe">
                                 <rect key="frame" x="97" y="67" width="196" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="5dx-1u-Prj"/>
@@ -42,6 +42,9 @@
                                 <rect key="frame" x="80" y="262" width="230" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Editar Foto"/>
+                                <connections>
+                                    <action selector="tappedPhotoEditButton:" destination="ouW-uD-i7C" eventType="touchUpInside" id="ECd-Ej-R3r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgy-G7-inU">
                                 <rect key="frame" x="10" y="317" width="370" height="19"/>
@@ -94,9 +97,9 @@
                     <tabBarItem key="tabBarItem" title="Tela 01" image="apple.logo" catalog="system" selectedImage="apple.logo" id="zeO-sG-UYF"/>
                     <connections>
                         <outlet property="addButton" destination="Vfw-fu-LFx" id="EzC-U7-iKe"/>
-                        <outlet property="editPhotoButton" destination="hLJ-1T-0Tb" id="ZOF-9s-EHu"/>
                         <outlet property="nameLabel" destination="Fgy-G7-inU" id="Una-6H-gcy"/>
                         <outlet property="nameTextField" destination="gDy-Bg-GZM" id="Wnf-Df-OiZ"/>
+                        <outlet property="photoEditButton" destination="hLJ-1T-0Tb" id="ZOF-9s-EHu"/>
                         <outlet property="tableView" destination="laa-mB-jlW" id="EKd-F5-fFn"/>
                         <outlet property="userImageView" destination="eju-3f-GZe" id="of0-Qd-ang"/>
                     </connections>
@@ -144,7 +147,6 @@
     <resources>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
-        <image name="face" width="700" height="700"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
