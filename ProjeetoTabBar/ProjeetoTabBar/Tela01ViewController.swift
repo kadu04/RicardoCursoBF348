@@ -77,6 +77,7 @@ class Tela01ViewController: UIViewController {
 //        } else {
 //            imagePicker.sourceType = .photoLibrary
 //        }
+        imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true)
             
     }
@@ -86,7 +87,7 @@ class Tela01ViewController: UIViewController {
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
         //15-
-        if !textFieldIsEmpty() {
+        if textFieldIsNotEmpty() {
             //12-
             data.append(User(name: nameTextField.text ?? "", image: userImageView.image ?? UIImage()))
             //reloadData faz a tableView se carregar
@@ -106,13 +107,13 @@ class Tela01ViewController: UIViewController {
     }
     
     //15- função para dizer se o textefield tem valor ou não, se está vazia ou não.
-    func textFieldIsEmpty() -> Bool {
+    func textFieldIsNotEmpty() -> Bool {
         if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {
-            //adicione o novo elemento
-            return true
-        } else {
             //NÃO adicione o novo elemento
             return false
+        } else {
+            //Adicione o novo elemento
+            return true
         }
     }
     
