@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NotificationCenterProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-ZX-ZbB">
+                                <rect key="frame" x="60" y="740" width="270" height="45"/>
+                                <color key="backgroundColor" red="0.44705885649999999" green="0.44705885649999999" blue="0.46274507050000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Klv-ij-BaC"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clique Aqui">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedChooseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9w-AY-ukE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpd-zq-kdr">
+                                <rect key="frame" x="60" y="472" width="270" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_apple" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzt-e3-Ylm">
+                                <rect key="frame" x="75" y="252" width="240" height="200"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="SVM-Ci-orz"/>
+                                    <constraint firstAttribute="height" constant="200" id="y2x-i7-Yrm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bPn-ZX-ZbB" secondAttribute="bottom" constant="25" id="4jy-rL-TN5"/>
+                            <constraint firstItem="Zpd-zq-kdr" firstAttribute="top" secondItem="gzt-e3-Ylm" secondAttribute="bottom" constant="20" id="LEB-5V-H7y"/>
+                            <constraint firstItem="gzt-e3-Ylm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Snb-AJ-iQg"/>
+                            <constraint firstItem="bPn-ZX-ZbB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="UXf-AA-Ifj"/>
+                            <constraint firstItem="Zpd-zq-kdr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="dlP-Cp-9IB"/>
+                            <constraint firstItem="gzt-e3-Ylm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="gTU-mC-9Vx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zpd-zq-kdr" secondAttribute="trailing" constant="60" id="orW-2X-HS6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bPn-ZX-ZbB" secondAttribute="trailing" constant="60" id="qku-ly-dfx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tai-Mh-2Ss"/>
+                    <connections>
+                        <outlet property="chooseButton" destination="bPn-ZX-ZbB" id="ck6-vR-scN"/>
+                        <outlet property="logoImageView" destination="gzt-e3-Ylm" id="yHT-bI-kP2"/>
+                        <outlet property="nameLabel" destination="Zpd-zq-kdr" id="u7A-91-QPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987.69230769230762" y="-86.018957345971558"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="zpI-dm-gyC">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="60Y-hi-75M" customClass="SelectionViewController" customModule="NotificationCenterProtocol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7j-Xr-3Mm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opções" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jx9-SQ-GSi">
+                                <rect key="frame" x="70" y="83" width="250" height="51.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="42"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="PhA-cP-Of1">
+                                <rect key="frame" x="80" y="251" width="230" height="342"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z1-p5-N5E">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Emh-d5-lDr"/>
+                                            <constraint firstAttribute="width" constant="230" id="o1W-Uq-27O"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button" image="Macbook"/>
+                                        <connections>
+                                            <action selector="tappedMacbookButton:" destination="60Y-hi-75M" eventType="touchUpInside" id="8IS-89-kRp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-6g-xb4">
+                                        <rect key="frame" x="0.0" y="192" width="230" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="SAi-P1-55S"/>
+                                            <constraint firstAttribute="width" constant="230" id="mPT-dd-bXt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="imac"/>
+                                        <connections>
+                                            <action selector="tappedImacButton:" destination="60Y-hi-75M" eventType="touchUpInside" id="Odm-K3-RcE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wN7-lR-pgo"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PhA-cP-Of1" firstAttribute="centerY" secondItem="J7j-Xr-3Mm" secondAttribute="centerY" id="DCN-h0-Lr1"/>
+                            <constraint firstItem="wN7-lR-pgo" firstAttribute="trailing" secondItem="jx9-SQ-GSi" secondAttribute="trailing" constant="70" id="OYF-QP-zVv"/>
+                            <constraint firstItem="PhA-cP-Of1" firstAttribute="centerX" secondItem="J7j-Xr-3Mm" secondAttribute="centerX" id="ibg-Eg-cSu"/>
+                            <constraint firstItem="jx9-SQ-GSi" firstAttribute="leading" secondItem="wN7-lR-pgo" secondAttribute="leading" constant="70" id="nFh-Fu-5oN"/>
+                            <constraint firstItem="jx9-SQ-GSi" firstAttribute="top" secondItem="wN7-lR-pgo" secondAttribute="top" constant="36" id="qAg-uJ-PIt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rwg-q0-GBK"/>
+                    <connections>
+                        <outlet property="imacButton" destination="e3h-6g-xb4" id="Beu-ga-8Bj"/>
+                        <outlet property="macbookButton" destination="1Z1-p5-N5E" id="Ng2-us-5Rd"/>
+                        <outlet property="titleLabel" destination="jx9-SQ-GSi" id="bkr-kt-fbp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sK-iQ-XXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Macbook" width="1499" height="802"/>
+        <image name="imac" width="512" height="512"/>
+        <image name="logo_apple" width="1200" height="739"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
