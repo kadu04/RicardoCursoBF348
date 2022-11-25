@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         nameTextField.delegate = self
         //10- Mudar o fundo da tableView
         tableView.backgroundColor = .black
+        
+        
     }
     
     //3- assinar os protocolos delegate e datasource
@@ -60,6 +62,16 @@ class ViewController: UIViewController {
     //2- ligação dos Botões
     
     @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
+    }
+    
+    func textFieldIsNotEmpty() -> Bool {
+        if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {
+            //NÃO adicione o novo elemento
+            return false
+        } else {
+            //Adicione o novo elemento
+            return true
+        }
     }
 }
 
@@ -127,6 +139,13 @@ extension ViewController: UITextFieldDelegate {
         listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
         //21(1)- recarregar a tableView
         tableView.reloadData()
+        //24- //Para sumir o nome da pessoa na textField qdo ela digitar
+        nameTextField.text = ""
+//        //25- criação do alert
+//        let alertController = UIAlertController(title: "Atenção", message: "Informe o nome corretamente", preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "Ok", style: .cancel)
+//        alertController.addAction(ok)
+//        present(alertController, animated: true)
         return true
     }
 }
