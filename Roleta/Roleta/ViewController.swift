@@ -60,9 +60,10 @@ class ViewController: UIViewController {
     }
     
     //2- ligação dos Botões
-    
     @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
     }
+    
+    
     
     func textFieldIsNotEmpty() -> Bool {
         if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {

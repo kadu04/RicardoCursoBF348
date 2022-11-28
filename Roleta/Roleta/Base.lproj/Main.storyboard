@@ -53,7 +53,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Sortear"/>
                                 <connections>
-                                    <action selector="tappedDrawNumberButton:" destination="eg1-TS-kV8" eventType="touchUpInside" id="yAD-t2-Vhh"/>
+                                    <action selector="tappedDrawNumberButton:" destination="eg1-TS-kV8" eventType="touchUpInside" id="ax2-7p-Y7V"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2Qj-1N-aII">
@@ -81,7 +81,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Roleta" id="YpB-IZ-4MU"/>
                     <connections>
-                        <outlet property="drawNumberButton" destination="NeO-ml-PWM" id="o1a-Uj-QbU"/>
+                        <outlet property="drawNumberButton" destination="NeO-ml-PWM" id="gf5-nM-xFW"/>
                         <outlet property="logoAppImageView" destination="pmU-Y5-Gpz" id="qbf-BP-Evw"/>
                         <outlet property="nameTextField" destination="rsq-fq-IbM" id="UYM-ce-MkQ"/>
                         <outlet property="tableView" destination="2Qj-1N-aII" id="2YC-vQ-j4E"/>
