@@ -23,21 +23,21 @@ class ViewController: UIViewController {
     var listPerson: [Person] = []
     //20- Criar a lista de imagem Person para ser aleatória
     var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
-    //28(3) - criar a variável person
+    //28
     var person: Person?
-    //30-
+    //29-
     var alert: AlertController?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //31- fazer a instância do AlertController
+        //28
         alert = AlertController(controller: self)
         //5- se criou um método, tem que chamá-lo. é o primeiro ciclo de vida a ser chamado. Depois criar o grupo Cell.
         configTableView()
         //11(1)- se criou um método, tem que chamá-lo.
         configTextEndColors()
-        //37- criou um método, tem que chamar! para desabilitar o botão somente se tiver alguém na tela
+        //30-
         blockedDrawNumberButton()
         
         
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         tableView.register(PersonTableViewCell.nib(), forCellReuseIdentifier: PersonTableViewCell.identifier)
     }
     
-    //36- função para o botão sortear, sorteie somente se tiver alguém lá na tela
+    //30
     func blockedDrawNumberButton() {
         if listPerson.isEmpty {
             drawNumberButton.isEnabled = false
@@ -80,10 +80,8 @@ class ViewController: UIViewController {
     
     //2- ligação dos Botões
     @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
-        //28(2)- fazer a lógica do sorteio. primeiro colocar "var person", dpois de fazer o //28(2)trocar por "self.person"
+        //28-
         self.person = listPerson.randomElement()
-        //28(3) para printar, dpois trocar para dump(person)
-        //print(person)
         dump(person)
     }
     
@@ -100,36 +98,37 @@ class ViewController: UIViewController {
 
 //4- Fazer a extension.
 extension ViewController: UITableViewDelegate {
-    //27- qdo for disparado, dizer quem foi selecionado. didSelectRowAt é o método que intercepta as ações qdo precionamos em uma célula.
+    //26-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //27- depois que fizer o //28- pode apagar!!
+        //27- criar uma logica se quem foi pressionado se foi sorteado ou não
+        // Se sim -> apresentar um alert
+        // Se não -> deletar o usuário
+        //26-
 //        print(listPerson[indexPath.row])
-        //28(3)- para printar, dpois trocar para  dump(self.listPerson[indexPath.row])
-        // print(self.listPerson[indexPath.row])
-        //35- depois que criar o //34- e rodar o ap, deletar  dump(self.listPerson[indexPath.row])
-        //dump(self.listPerson[indexPath.row])
-        //28(1)- lógica para saber a pessoa que foi precionada foi sorteada ou não! depois trocar pelo //28(1). trocar de struct para class no Model
+//        if self.listPerson[indexPath.row] === self.person {
+//            print("parabéns voce foi sorteado")
+//        } else {
+//            print("uffa, voce escapou")
+//
+//        }
+        dump(self.listPerson[indexPath.row])
         if self.listPerson[indexPath.row] === self.person {
             print("parabens você foi sorteado, então pague a conta")
-            //32-
-            alert?.showAlert(title: "Muito bom", message: "Agora é sua vez, pague a conta ;)")
-            //34 - remover todo mundo
+            alert?.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta ;)")
+            //29
             listPerson.removeAll()
         } else{
             print("uffa, você escapou")
-            //33- deletar o usuário
+            //29-
             listPerson.remove(at: indexPath.row)
+            
         }
-        //37(1)- criou um método, tem que chamar! para desabilitar o botão somente se tiver alguém na tela
+        //30-
         blockedDrawNumberButton()
-        //33(1)
+        //29
         tableView.reloadData()
     }
 }
-
-//29- criar o Alert, primeiro criar grupo Alert
-
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -187,11 +186,11 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        //25- lógica para qdo apertarmos o retorno não passe um person vazio, sem o nome
+        //25-
         if !(textField.text?.isEmpty ?? false) {
             listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
             tableView.reloadData()
-            //37(2)- criou um método, tem que chamar! para desabilitar o botão somente se tiver alguém na tela
+            //30-
             blockedDrawNumberButton()
         }
         //21- para adicionar o participante, toda vez que apertar no Return do teclado
@@ -200,6 +199,11 @@ extension ViewController: UITextFieldDelegate {
 //        tableView.reloadData()
         //24- //Para sumir o nome da pessoa na textField qdo ela digitar
         nameTextField.text = ""
+//        //27- criação do alert
+//        let alertController = UIAlertController(title: "Atenção", message: "Informe o nome corretamente", preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "Ok", style: .cancel)
+//        alertController.addAction(ok)
+//        present(alertController, animated: true)
         return true
     }
 }

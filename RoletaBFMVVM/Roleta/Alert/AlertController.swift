@@ -2,12 +2,11 @@
 //  AlertController.swift
 //  Roleta
 //
-//  Created by Ricardo Massaki on 30/11/22.
+//  Created by Ricardo Massaki on 29/11/22.
 //
 
 import UIKit
 
-//29- primeiro excluir o ":" e o "NSObject". class AlertController: NSObject {
 class AlertController {
     
     var controller: UIViewController
@@ -24,5 +23,3 @@ class AlertController {
     }
 
 }
-
-

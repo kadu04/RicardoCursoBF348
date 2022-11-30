@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5679A5732937A8F4005CA475 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A5722937A8F4005CA475 /* AlertController.swift */; };
+		5679A5702936E22C005CA475 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A56F2936E22C005CA475 /* AlertController.swift */; };
 		56B0E9CE293038CD001A36A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9CD293038CD001A36A3 /* AppDelegate.swift */; };
 		56B0E9D0293038CD001A36A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9CF293038CD001A36A3 /* SceneDelegate.swift */; };
 		56B0E9D2293038CD001A36A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9D1293038CD001A36A3 /* ViewController.swift */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5679A5722937A8F4005CA475 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		5679A56F2936E22C005CA475 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		56B0E9CA293038CD001A36A3 /* Roleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B0E9CD293038CD001A36A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B0E9CF293038CD001A36A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,10 +49,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5679A5712937A8C5005CA475 /* Alert */ = {
+		5679A56C2936D89F005CA475 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				5679A5722937A8F4005CA475 /* AlertController.swift */,
+				5679A56F2936E22C005CA475 /* AlertController.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 		56B0E9CC293038CD001A36A3 /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
-				5679A5712937A8C5005CA475 /* Alert */,
+				5679A56C2936D89F005CA475 /* Alert */,
 				56F5B72F2930F45900AC4C26 /* EmptyCell */,
 				56B0E9EE29305390001A36A3 /* Person */,
 				56B0E9E629303B66001A36A3 /* Model */,
@@ -194,7 +194,7 @@
 				56B0E9D2293038CD001A36A3 /* ViewController.swift in Sources */,
 				56B0E9CE293038CD001A36A3 /* AppDelegate.swift in Sources */,
 				56B0E9E829303BB6001A36A3 /* Person.swift in Sources */,
-				5679A5732937A8F4005CA475 /* AlertController.swift in Sources */,
+				5679A5702936E22C005CA475 /* AlertController.swift in Sources */,
 				56B0E9D0293038CD001A36A3 /* SceneDelegate.swift in Sources */,
 				56F5B7322930F4F500AC4C26 /* EmptyTableViewCell.swift in Sources */,
 			);

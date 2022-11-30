@@ -12,7 +12,6 @@ class Person {
     var name: String
     var image: String
     
-//28-
     init(name: String, image: String) {
         self.name = name
         self.image = image
