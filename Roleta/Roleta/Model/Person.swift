@@ -6,8 +6,14 @@
 //
 
 import Foundation
+//28- mudar de struct para class
 //17- criar o struct e depois voltar para o setupCell //16-
-struct Person {
+class Person {
     var name: String
     var image: String
+    
+    init(name: String, image: String) {
+        self.name = name
+        self.image = image
+    }
 }

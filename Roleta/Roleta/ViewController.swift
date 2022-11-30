@@ -23,14 +23,22 @@ class ViewController: UIViewController {
     var listPerson: [Person] = []
     //20- Criar a lista de imagem Person para ser aleatória
     var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
+    //28
+    var person: Person?
+    //29-
+    var alert: AlertController?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //28
+        alert = AlertController(controller: self)
         //5- se criou um método, tem que chamá-lo. é o primeiro ciclo de vida a ser chamado. Depois criar o grupo Cell.
         configTableView()
         //11(1)- se criou um método, tem que chamá-lo.
         configTextEndColors()
+        //30-
+        blockedDrawNumberButton()
         
         
         
@@ -59,26 +67,68 @@ class ViewController: UIViewController {
         tableView.register(PersonTableViewCell.nib(), forCellReuseIdentifier: PersonTableViewCell.identifier)
     }
     
-    //2- ligação dos Botões
-    @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
-    }
-    
-    
-    
-    func textFieldIsNotEmpty() -> Bool {
-        if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {
-            //NÃO adicione o novo elemento
-            return false
+    //30
+    func blockedDrawNumberButton() {
+        if listPerson.isEmpty {
+            drawNumberButton.isEnabled = false
+            drawNumberButton.alpha = 0.5
         } else {
-            //Adicione o novo elemento
-            return true
+            drawNumberButton.isEnabled = true
+            drawNumberButton.alpha = 1
         }
     }
+    
+    //2- ligação dos Botões
+    @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
+        //28-
+        self.person = listPerson.randomElement()
+        dump(person)
+    }
+    
+//    func textFieldIsNotEmpty() -> Bool {
+//        if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {
+//            //NÃO adicione o novo elemento
+//            return false
+//        } else {
+//            //Adicione o novo elemento
+//            return true
+//        }
+//    }
 }
 
-
 //4- Fazer a extension.
-extension ViewController: UITableViewDelegate {}
+extension ViewController: UITableViewDelegate {
+    //26-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //27- criar uma logica se quem foi pressionado se foi sorteado ou não
+        // Se sim -> apresentar um alert
+        // Se não -> deletar o usuário
+        //26-
+//        print(listPerson[indexPath.row])
+//        if self.listPerson[indexPath.row] === self.person {
+//            print("parabéns voce foi sorteado")
+//        } else {
+//            print("uffa, voce escapou")
+//
+//        }
+        dump(self.listPerson[indexPath.row])
+        if self.listPerson[indexPath.row] === self.person {
+            print("parabens você foi sorteado, então pague a conta")
+            alert?.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta ;)")
+            //29
+            listPerson.removeAll()
+        } else{
+            print("uffa, você escapou")
+            //29-
+            listPerson.remove(at: indexPath.row)
+            
+        }
+        //30-
+        blockedDrawNumberButton()
+        //29
+        tableView.reloadData()
+    }
+}
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -136,13 +186,20 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        //25-
+        if !(textField.text?.isEmpty ?? false) {
+            listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+            tableView.reloadData()
+            //30-
+            blockedDrawNumberButton()
+        }
         //21- para adicionar o participante, toda vez que apertar no Return do teclado
-        listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+        //listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
         //21(1)- recarregar a tableView
-        tableView.reloadData()
+//        tableView.reloadData()
         //24- //Para sumir o nome da pessoa na textField qdo ela digitar
         nameTextField.text = ""
-//        //25- criação do alert
+//        //27- criação do alert
 //        let alertController = UIAlertController(title: "Atenção", message: "Informe o nome corretamente", preferredStyle: .alert)
 //        let ok = UIAlertAction(title: "Ok", style: .cancel)
 //        alertController.addAction(ok)
