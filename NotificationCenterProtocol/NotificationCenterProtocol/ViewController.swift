@@ -87,3 +87,4 @@ extension ViewController: SelectionViewControllerProtocol {
 }
 
 
+// criamos uma extension para poder deixar o nosso codigo mais organizada
