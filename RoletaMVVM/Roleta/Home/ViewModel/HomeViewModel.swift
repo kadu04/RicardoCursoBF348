@@ -82,10 +82,8 @@ class HomeViewModel {
     }
     
     
-    var textField = UITextField()
-    //var textField: UITextField
-    func appendPerson() {
-        listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+    func appendPerson(name: String) {
+        listPerson.append(Person(name: name, image: listImage.randomElement() ?? ""))
     }
 
 }

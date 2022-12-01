@@ -88,7 +88,7 @@ extension HomeVC: UITableViewDelegate {
         //13(1)- depois que mandar essa lógica pra lá, excluir a linha e substituir por:
         //if self.listPerson[indexPath.row] === self.person {
         if viewModel.checkPersonPayer(indexPath: indexPath) {
-            print("parabens você foi sorteado, então pague a conta")
+            //print("parabens você foi sorteado, então pague a conta")
             alert?.showAlert(title: "Muitoo bom", message: "Agora é sua vez, pague a conta ;)")
             //14(1)- depois que mandar essa lógica pra lá, excluir a linha e substituir por:
             viewModel.removeAll()
@@ -149,7 +149,7 @@ extension HomeVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if !(textField.text?.isEmpty ?? false) {
-            viewModel.appendPerson()
+            viewModel.appendPerson(name: textField.text ?? "")
             //listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
             tableView.reloadData()
             blockedDrawNumberButton()
