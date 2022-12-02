@@ -75,14 +75,16 @@ class HomeViewModel {
     //excluir o "viewModel"da variável.
     var heightForRowAt: CGFloat {
         if isListPersonEmpty {
-            return 248
+            return 248  //empty
         } else {
-            return 92
+            return 92   //person
         }
     }
     
     
-    func appendPerson(name: String) {
+    //19- criar a func do "listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))"
+    //vai dar erro, pq não tem o textField.text. então tem que fazer a função abaixo
+    func addPerson(name: String) {
         listPerson.append(Person(name: name, image: listImage.randomElement() ?? ""))
     }
 

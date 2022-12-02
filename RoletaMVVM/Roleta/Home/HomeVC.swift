@@ -149,7 +149,8 @@ extension HomeVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if !(textField.text?.isEmpty ?? false) {
-            viewModel.appendPerson(name: textField.text ?? "")
+            //19(1)- depois que mandar essa lógica pra lá, excluir e substituir
+            viewModel.addPerson(name: textField.text ?? "")
             //listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
             tableView.reloadData()
             blockedDrawNumberButton()
