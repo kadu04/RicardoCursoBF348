@@ -37,7 +37,7 @@ class ViewModel {
         if indexPath.row == 0 {
             return 131
         } else {
-            return 164
+            return 184
         }
     }
 

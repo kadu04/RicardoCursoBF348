@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.archery" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fEE-aS-M6J">
-                        <rect key="frame" x="20" y="9.3333333333333357" width="92" height="86.666666666666671"/>
+                        <rect key="frame" x="16" y="9.3333333333333357" width="92" height="86.666666666666671"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="92" id="iVq-Fh-X3M"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ne-UV-U3j">
-                        <rect key="frame" x="139" y="37" width="212" height="31"/>
+                        <rect key="frame" x="135" y="37" width="220" height="31"/>
                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -41,8 +41,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="faceImageView" destination="fEE-aS-M6J" id="LUc-AW-0aJ"/>
                 <outlet property="nameLabel" destination="9Ne-UV-U3j" id="eQh-RQ-dG7"/>
+                <outlet property="userImageView" destination="fEE-aS-M6J" id="Oc9-mS-nB7"/>
             </connections>
             <point key="canvasLocation" x="255" y="42"/>
         </tableViewCell>

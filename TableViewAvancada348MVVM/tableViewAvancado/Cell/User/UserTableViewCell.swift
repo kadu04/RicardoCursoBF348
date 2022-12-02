@@ -12,6 +12,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var userImageView: UIImageView!
+    
     //3-
     static let identifier: String = "UserTableViewCell"
         //4-
