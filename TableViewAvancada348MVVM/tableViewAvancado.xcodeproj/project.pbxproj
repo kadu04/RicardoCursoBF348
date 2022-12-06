@@ -56,7 +56,6 @@
 		5679A57E2939C2B0005CA475 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5679A57F2939C2BD005CA475 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -96,8 +95,9 @@
 		56ED740E290B4C610052BE88 /* tableViewAvancado */ = {
 			isa = PBXGroup;
 			children = (
-				5679A57E2939C2B0005CA475 /* Home */,
 				56ED742A290B510C0052BE88 /* Model */,
+				5679A57E2939C2B0005CA475 /* Home */,
+				5679A57F2939C2BD005CA475 /* ViewModel */,
 				56ED7438290B9ECF0052BE88 /* Cell */,
 				56ED7413290B4C610052BE88 /* ViewController.swift */,
 				56ED7415290B4C610052BE88 /* Main.storyboard */,
