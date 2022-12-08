@@ -9,7 +9,7 @@ import UIKit
 
 class ViewModel {
     
-    var vehicleList: [Vehicle] = [
+    private var vehicleList: [Vehicle] = [
         Vehicle(title: "Carro", list: ["car1","car2","car3","car4","car5","car6"]),
         Vehicle(title: "Motocicleta", list: ["moto1","moto2","moto3","moto4","moto5","moto6"]),
         Vehicle(title: "Avião", list: ["avião1","avião2","avião3","avião4","avião5","avião6"]),

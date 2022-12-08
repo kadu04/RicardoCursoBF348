@@ -16,7 +16,7 @@ class CarTableViewCell: UITableViewCell {
     
     //MMVC
     //var viewModel: CarTableViewCell = CarTableViewCell()
-    var viewModel: ViewModel1 = ViewModel1()
+    var viewModel: CarTableViewCellViewModel = CarTableViewCellViewModel()
     
     
     //5- criou o tableviewcell, já cria o "identifier" e o "nib"
