@@ -14,11 +14,7 @@ class CarTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    //MMVC
-    //var viewModel: CarTableViewCell = CarTableViewCell()
-    var viewModel: ViewModel1 = ViewModel1()
-    
-    
+
     //5- criou o tableviewcell, já cria o "identifier" e o "nib"
     static let identifier: String = "CarTableViewCell"
     //5-
@@ -26,7 +22,11 @@ class CarTableViewCell: UITableViewCell {
         return UINib(nibName: identifier, bundle: nil)
     }
     
-    var data: [String] = []
+    //MMVC
+    var viewModel: CarTableViewCellViewModel = CarTableViewCellViewModel()
+    
+    //
+    //var data: [String] = []
     
     
     //6- colocar o nome no identifier na Xib
@@ -56,9 +56,9 @@ class CarTableViewCell: UITableViewCell {
     //17-18- criar o setup
     func setupCell(data: Vehicle) {
         //
-        viewModel.setVehicle(vehicle: data)
-//        self.data = data.list
-//        self.titleLabel.text = data.title
+        viewModel.setListNameImage(data: data.list)
+        //self.data = data.list
+        self.titleLabel.text = data.title
     }
     
 }
@@ -78,7 +78,7 @@ extension CarTableViewCell:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return 0
         //20-
-        return data.count
+        return viewModel.numberOfItemsInSection
         
     }
     
@@ -86,7 +86,7 @@ extension CarTableViewCell:UICollectionViewDataSource {
         //21-
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell
         //cell?.setupCell(nameImage: viewModel.data(indexPath: indexPath))
-        cell?.setupCell(nameImage: data[indexPath.row])
+        cell?.setupCell(nameImage: viewModel.loadCurrentNameImage(indexPath: indexPath))
         
         //22-
         return cell ?? UICollectionViewCell()
