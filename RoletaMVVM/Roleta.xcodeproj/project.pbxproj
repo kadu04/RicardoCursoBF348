@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		5679A5702936E22C005CA475 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A56F2936E22C005CA475 /* AlertController.swift */; };
 		5679A5772937DE73005CA475 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A5762937DE73005CA475 /* HomeViewModel.swift */; };
+		5684A45A294159A80069B355 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A459294159A80069B355 /* HistoryVC.swift */; };
+		5684A45D29415B910069B355 /* History.json in Resources */ = {isa = PBXBuildFile; fileRef = 5684A45C29415B910069B355 /* History.json */; };
+		5684A45F29415EEC0069B355 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A45E29415EEC0069B355 /* History.swift */; };
+		5684A46229416D460069B355 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A46129416D460069B355 /* HistoryViewModel.swift */; };
+		5684A46529416F1E0069B355 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A46429416F1E0069B355 /* HistoryService.swift */; };
+		5684A467294171A90069B355 /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A466294171A90069B355 /* GenericService.swift */; };
 		56B0E9CE293038CD001A36A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9CD293038CD001A36A3 /* AppDelegate.swift */; };
 		56B0E9D0293038CD001A36A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9CF293038CD001A36A3 /* SceneDelegate.swift */; };
 		56B0E9D2293038CD001A36A3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9D1293038CD001A36A3 /* HomeVC.swift */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		5679A56F2936E22C005CA475 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		5679A5762937DE73005CA475 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5684A459294159A80069B355 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		5684A45C29415B910069B355 /* History.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = History.json; sourceTree = "<group>"; };
+		5684A45E29415EEC0069B355 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5684A46129416D460069B355 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		5684A46429416F1E0069B355 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		5684A466294171A90069B355 /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		56B0E9CA293038CD001A36A3 /* Roleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B0E9CD293038CD001A36A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56B0E9CF293038CD001A36A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,41 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		5684A456294159580069B355 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5684A46029416D1F0069B355 /* ViewModel */,
+				5684A45B29415B3F0069B355 /* Json */,
+				5684A459294159A80069B355 /* HistoryVC.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5684A45B29415B3F0069B355 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				5684A45C29415B910069B355 /* History.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		5684A46029416D1F0069B355 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5684A46129416D460069B355 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5684A46329416E500069B355 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5684A46429416F1E0069B355 /* HistoryService.swift */,
+				5684A466294171A90069B355 /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		56B0E9C1293038CD001A36A3 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +142,8 @@
 		56B0E9CC293038CD001A36A3 /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
+				5684A46329416E500069B355 /* Service */,
+				5684A456294159580069B355 /* History */,
 				5679A5742937DC4B005CA475 /* Home */,
 				5679A56C2936D89F005CA475 /* Alert */,
 				56F5B72F2930F45900AC4C26 /* EmptyCell */,
@@ -114,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				56B0E9E729303BB6001A36A3 /* Person.swift */,
+				5684A45E29415EEC0069B355 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +248,7 @@
 				56F5B7332930F4F500AC4C26 /* EmptyTableViewCell.xib in Resources */,
 				56B0E9D7293038CF001A36A3 /* Assets.xcassets in Resources */,
 				56B0E9D5293038CD001A36A3 /* Main.storyboard in Resources */,
+				5684A45D29415B910069B355 /* History.json in Resources */,
 				56B0E9F2293053DE001A36A3 /* PersonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,11 +262,16 @@
 			files = (
 				56B0E9F1293053DE001A36A3 /* PersonTableViewCell.swift in Sources */,
 				56B0E9D2293038CD001A36A3 /* HomeVC.swift in Sources */,
+				5684A46229416D460069B355 /* HistoryViewModel.swift in Sources */,
 				56B0E9CE293038CD001A36A3 /* AppDelegate.swift in Sources */,
 				5679A5772937DE73005CA475 /* HomeViewModel.swift in Sources */,
+				5684A45F29415EEC0069B355 /* History.swift in Sources */,
+				5684A467294171A90069B355 /* GenericService.swift in Sources */,
 				56B0E9E829303BB6001A36A3 /* Person.swift in Sources */,
 				5679A5702936E22C005CA475 /* AlertController.swift in Sources */,
 				56B0E9D0293038CD001A36A3 /* SceneDelegate.swift in Sources */,
+				5684A45A294159A80069B355 /* HistoryVC.swift in Sources */,
+				5684A46529416F1E0069B355 /* HistoryService.swift in Sources */,
 				56F5B7322930F4F500AC4C26 /* EmptyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
