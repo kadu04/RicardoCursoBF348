@@ -10,7 +10,7 @@ import Foundation
 
 //Esses protocolos, só vão ser criados uma única vez. Por isso é bom criar uma "File" para armazená-los.
 
-protocol Genericervice: AnyObject{
+protocol GenericService: AnyObject{
     typealias completion <T> = (_ result: T, _ failure: Error?) -> Void
 }
 

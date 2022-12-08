@@ -27,8 +27,4 @@ class MenuProfileViewModel {
             break
         }
     }
-    
-    
-    
-
 }

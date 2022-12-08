@@ -8,11 +8,9 @@
 import UIKit
 
 //cria esse protocol por causa do completion, para puxar o protocolo que está no "File GenericService"
-protocol MenuProfileServiceDelegate: Genericervice {
+protocol MenuProfileServiceDelegate: GenericService {
     func getMenuFromJson(completion: @escaping completion<MenuProfileGroup?>)
 }
-
-
 
 class MenuProfileService: MenuProfileServiceDelegate {
     func getMenuFromJson(completion: @escaping completion<MenuProfileGroup?>) {
