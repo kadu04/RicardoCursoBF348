@@ -12,7 +12,7 @@ class HistoryViewModel {
     private let service: HistoryService = HistoryService()
     
     func fetchHistory() {
-        service.getHistoryFromJson { result, failure in
+        service.getHistoryURLSession { result, failure in
             if let result = result {
                 print(result)
             } else {
@@ -23,3 +23,9 @@ class HistoryViewModel {
     }
 
 }
+
+//MMVM padrao de arquitetura de desenvolvimento, e tem 3 camadas
+//Model refere-se a camada de dados
+//View é a camada que possui toda estrutura de UI
+//ViewModel sendo responsável pela parte lógica da camada view
+

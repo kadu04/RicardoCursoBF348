@@ -9,9 +9,40 @@ import UIKit
 
 protocol HistoryServiceProtocol: GenericService {
     func getHistoryFromJson(completion: @escaping completion<History?>)
+    func getHistoryURLSession(completion: @escaping completion<History?>)
+
 }
 
 class HistoryService: HistoryServiceProtocol {
+    
+    func getHistoryURLSession(completion: @escaping completion<History?>) {
+        let URLString: String = "https://run.mocky.io/v3/0f0dd53e-f301-43e4-b902-f90762dd0492"
+        guard let url: URL = URL(string: URLString) else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            guard let dataResult = data else { return }
+            
+            guard let response = response as? HTTPURLResponse else { return }
+            
+            if response.statusCode == 200 {
+                do {
+                    let history: History = try JSONDecoder().decode(History.self, from: dataResult)
+                    print("SUCCESS -> \(#function)")
+                    completion(history,nil)
+                } catch {
+                    print("ERROR -> \(#function)")
+                    completion(nil, error)
+                }
+            } else {
+                print("ERROR -> \"(#function)")
+                completion(nil, error)
+            }
+        }
+        task.resume()
+    }
     
     func getHistoryFromJson(completion: @escaping completion<History?>) {
         if let url = Bundle.main.url(forResource: "History", withExtension: "json") {

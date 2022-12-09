@@ -66,6 +66,7 @@
 		5679A56C2936D89F005CA475 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				5684A459294159A80069B355 /* HistoryVC.swift */,
 				5679A56F2936E22C005CA475 /* AlertController.swift */,
 			);
 			path = Alert;
@@ -75,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				5679A5752937DC63005CA475 /* ViewModel */,
-				56B0E9D1293038CD001A36A3 /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -93,7 +93,6 @@
 			children = (
 				5684A46029416D1F0069B355 /* ViewModel */,
 				5684A45B29415B3F0069B355 /* Json */,
-				5684A459294159A80069B355 /* HistoryVC.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -142,6 +141,7 @@
 		56B0E9CC293038CD001A36A3 /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
+				56B0E9D1293038CD001A36A3 /* HomeVC.swift */,
 				5684A46329416E500069B355 /* Service */,
 				5684A456294159580069B355 /* History */,
 				5679A5742937DC4B005CA475 /* Home */,
