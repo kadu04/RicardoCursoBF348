@@ -12,16 +12,14 @@ class HistoryViewModel {
     private let service: HistoryService = HistoryService()
     
     func fetchHistory() {
-        service.getHistoryURLSession { result, failure in
+        service.getHistoryAlamofire { result, failure in
             if let result = result {
                 print(result)
             } else {
                 print("Deu ruim!")
             }
         }
-        
     }
-
 }
 
 //MMVM padrao de arquitetura de desenvolvimento, e tem 3 camadas

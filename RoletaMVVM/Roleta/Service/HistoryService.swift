@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol HistoryServiceProtocol: GenericService {
     func getHistoryFromJson(completion: @escaping completion<History?>)
     func getHistoryURLSession(completion: @escaping completion<History?>)
-
+    func getHistoryAlamofire(completion: @escaping completion<History?>)
 }
 
 class HistoryService: HistoryServiceProtocol {
+    func getHistoryAlamofire(completion: @escaping completion<History?>) {
+        let urlString: String = "https://run.mocky.io/v3/0f0dd53e-f301-43e4-b902-f90762dd0492"
+        AF.request(urlString, method: .get).responseDecodable(of: History.self) { response in
+            debugPrint(response)
+            switch response.result {
+            case .success(let success):
+                completion(success,nil)
+            case .failure(let error):
+                completion(nil,error)
+            }
+        }
+    }
     
     func getHistoryURLSession(completion: @escaping completion<History?>) {
         let URLString: String = "https://run.mocky.io/v3/0f0dd53e-f301-43e4-b902-f90762dd0492"

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 protocol GenericService: AnyObject {
         typealias completion <T> = (_ result: T, _ failure: Error?) -> Void
     }
