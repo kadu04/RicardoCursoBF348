@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="xdo-cm-WQX">
             <objects>
-                <viewController id="OXc-zm-xxh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryVC" id="OXc-zm-xxh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pgr-va-kRx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vut-a4-Tbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="607" y="197"/>
+            <point key="canvasLocation" x="606" y="250"/>
         </scene>
         <!--Roleta-->
         <scene sceneID="7Ab-Za-Hhr">

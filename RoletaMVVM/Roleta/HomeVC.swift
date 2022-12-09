@@ -41,7 +41,6 @@ class HomeVC: UIViewController {
         configTableView()
         configTextEndColors()
         blockedDrawNumberButton()
-        
     }
     
     
@@ -49,7 +48,6 @@ class HomeVC: UIViewController {
         nameTextField.placeholder = "Digite um nome"
         nameTextField.delegate = self
         tableView.backgroundColor = .black
-        
     }
     
     
