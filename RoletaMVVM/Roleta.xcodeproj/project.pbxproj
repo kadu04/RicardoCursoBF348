@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561414EF29495F3D00E6A628 /* HistoryAccountListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561414ED29495F3D00E6A628 /* HistoryAccountListTableViewCell.swift */; };
+		561414F029495F3D00E6A628 /* HistoryAccountListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561414EE29495F3D00E6A628 /* HistoryAccountListTableViewCell.xib */; };
 		5679A5702936E22C005CA475 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A56F2936E22C005CA475 /* AlertController.swift */; };
 		5679A5772937DE73005CA475 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679A5762937DE73005CA475 /* HomeViewModel.swift */; };
 		5684A45A294159A80069B355 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5684A459294159A80069B355 /* HistoryVC.swift */; };
@@ -24,6 +26,7 @@
 		56B0E9E829303BB6001A36A3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9E729303BB6001A36A3 /* Person.swift */; };
 		56B0E9F1293053DE001A36A3 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B0E9EF293053DE001A36A3 /* PersonTableViewCell.swift */; };
 		56B0E9F2293053DE001A36A3 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B0E9F0293053DE001A36A3 /* PersonTableViewCell.xib */; };
+		56DA7FE9294A47A00045DBFF /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA7FE8294A47A00045DBFF /* Text.swift */; };
 		56F5B7322930F4F500AC4C26 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F5B7302930F4F500AC4C26 /* EmptyTableViewCell.swift */; };
 		56F5B7332930F4F500AC4C26 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F5B7312930F4F500AC4C26 /* EmptyTableViewCell.xib */; };
 		82EC017A349FD86BEEEB66C0 /* Pods_Roleta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834A04C15022BB2737A5E0F6 /* Pods_Roleta.framework */; };
@@ -31,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		245A2FE089AC9CE5A8D9A170 /* Pods-Roleta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roleta.debug.xcconfig"; path = "Target Support Files/Pods-Roleta/Pods-Roleta.debug.xcconfig"; sourceTree = "<group>"; };
+		561414ED29495F3D00E6A628 /* HistoryAccountListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAccountListTableViewCell.swift; sourceTree = "<group>"; };
+		561414EE29495F3D00E6A628 /* HistoryAccountListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryAccountListTableViewCell.xib; sourceTree = "<group>"; };
 		5679A56F2936E22C005CA475 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		5679A5762937DE73005CA475 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5684A459294159A80069B355 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 		56B0E9E729303BB6001A36A3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		56B0E9EF293053DE001A36A3 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		56B0E9F0293053DE001A36A3 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		56DA7FE8294A47A00045DBFF /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		56F5B7302930F4F500AC4C26 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		56F5B7312930F4F500AC4C26 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		834A04C15022BB2737A5E0F6 /* Pods_Roleta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roleta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,10 +83,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		561414EC29495F1F00E6A628 /* HistoryAccountList */ = {
+			isa = PBXGroup;
+			children = (
+				561414ED29495F3D00E6A628 /* HistoryAccountListTableViewCell.swift */,
+				561414EE29495F3D00E6A628 /* HistoryAccountListTableViewCell.xib */,
+			);
+			path = HistoryAccountList;
+			sourceTree = "<group>";
+		};
 		5679A56C2936D89F005CA475 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				5684A459294159A80069B355 /* HistoryVC.swift */,
 				5679A56F2936E22C005CA475 /* AlertController.swift */,
 			);
 			path = Alert;
@@ -90,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5679A5752937DC63005CA475 /* ViewModel */,
+				56B0E9D1293038CD001A36A3 /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -106,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5684A46029416D1F0069B355 /* ViewModel */,
-				5684A45B29415B3F0069B355 /* Json */,
+				5684A459294159A80069B355 /* HistoryVC.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -157,16 +172,16 @@
 		56B0E9CC293038CD001A36A3 /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
-				56B0E9D1293038CD001A36A3 /* HomeVC.swift */,
+				56DA7FE8294A47A00045DBFF /* Text.swift */,
 				5684A46329416E500069B355 /* Service */,
 				5684A456294159580069B355 /* History */,
 				5679A5742937DC4B005CA475 /* Home */,
 				5679A56C2936D89F005CA475 /* Alert */,
-				56F5B72F2930F45900AC4C26 /* EmptyCell */,
-				56B0E9EE29305390001A36A3 /* Person */,
+				5684A45B29415B3F0069B355 /* Json */,
 				56B0E9E629303B66001A36A3 /* Model */,
-				56B0E9CD293038CD001A36A3 /* AppDelegate.swift */,
+				56DA7FE7294A47190045DBFF /* CellGroup */,
 				56B0E9CF293038CD001A36A3 /* SceneDelegate.swift */,
+				56B0E9CD293038CD001A36A3 /* AppDelegate.swift */,
 				56B0E9D3293038CD001A36A3 /* Main.storyboard */,
 				56B0E9D6293038CF001A36A3 /* Assets.xcassets */,
 				56B0E9D8293038CF001A36A3 /* LaunchScreen.storyboard */,
@@ -191,6 +206,16 @@
 				56B0E9F0293053DE001A36A3 /* PersonTableViewCell.xib */,
 			);
 			path = Person;
+			sourceTree = "<group>";
+		};
+		56DA7FE7294A47190045DBFF /* CellGroup */ = {
+			isa = PBXGroup;
+			children = (
+				561414EC29495F1F00E6A628 /* HistoryAccountList */,
+				56F5B72F2930F45900AC4C26 /* EmptyCell */,
+				56B0E9EE29305390001A36A3 /* Person */,
+			);
+			path = CellGroup;
 			sourceTree = "<group>";
 		};
 		56F5B72F2930F45900AC4C26 /* EmptyCell */ = {
@@ -275,6 +300,7 @@
 				56B0E9D7293038CF001A36A3 /* Assets.xcassets in Resources */,
 				56B0E9D5293038CD001A36A3 /* Main.storyboard in Resources */,
 				5684A45D29415B910069B355 /* History.json in Resources */,
+				561414F029495F3D00E6A628 /* HistoryAccountListTableViewCell.xib in Resources */,
 				56B0E9F2293053DE001A36A3 /* PersonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +354,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561414EF29495F3D00E6A628 /* HistoryAccountListTableViewCell.swift in Sources */,
+				56DA7FE9294A47A00045DBFF /* Text.swift in Sources */,
 				56B0E9F1293053DE001A36A3 /* PersonTableViewCell.swift in Sources */,
 				56B0E9D2293038CD001A36A3 /* HomeVC.swift in Sources */,
 				5684A46229416D460069B355 /* HistoryViewModel.swift in Sources */,
