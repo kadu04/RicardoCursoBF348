@@ -15,6 +15,7 @@ class HistoryAccountListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var priceLabel: UILabel!
     
+    //37- code sniped. dpois criar a célula e fazer as ligações.
     static let identifier: String = "HistoryAccountListTableViewCell"
     
     static func nib() -> UINib {
@@ -26,6 +27,7 @@ class HistoryAccountListTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
     
+    //38- fazer o setup 
     public func setupCell(data: HistoryAccountList) {
         historyImageView.image = UIImage(named: data.iconImage ?? "")
         nameLabel.text = data.name ?? ""

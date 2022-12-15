@@ -8,18 +8,22 @@
 //21- dpois de criar o File HistoryService, criar o File GenericService (Swift File)
 
 import UIKit
+//30- colocar o import para poder acessar a biblioteca ou modulo
 import Alamofire
 
 //23- criar o protocol HistoryServiceProtocol. e colocar GenericService que é o protocol de onde ele herdou
 protocol HistoryServiceProtocol: GenericService {
-    //23(1)- a func (completion: @escaping completion<History?>) sempre vai ser padrão, e o @escaping usamos para dizer para a função que ela vai ser disparada, mas para ela não desaparecer e sim ficar de standby, enquanto o "complition" não disparar.
+    //23(1)- a func (completion: @escaping completion<History?>) sempre vai ser padrão, e o @escaping usamos para dizer para a função que ela vai ser disparada, mas para ela não desaparecer e sim ficar de standby, enquanto o "completion" não disparar.
     func getHistoryFromJson(completion: @escaping completion<History?>)
+    //27- //URLsession - é uma classe nativa que através dela conseguimos realizar requisições de uma maneira nativa. dpois que colocar a func, vai dar erro na "class HistoryService: HistoryServiceProtocol"aí apertar o FIX.
     func getHistoryURLSession(completion: @escaping completion<History?>)
+    //29- dpois que instalar o Alamofire no projeto, fazer a func getHistoryAlamofire, vai dar erro na "class HistoryService: HistoryServiceProtocol"aí apertar o FIX.
     func getHistoryAlamofire(completion: @escaping completion<History?>)
 }
 
 //24- a classe HistoryService vai herdar o protocolo que foi criado, neste caso o HistoryServiceProtocol. vai dar o erro, e clicar no FIX.
 class HistoryService: HistoryServiceProtocol {
+    
     
     func getHistoryAlamofire(completion: @escaping completion<History?>) {
         let urlString: String = "https://run.mocky.io/v3/0f0dd53e-f301-43e4-b902-f90762dd0492"
@@ -33,8 +37,9 @@ class HistoryService: HistoryServiceProtocol {
             }
         }
     }
-    
+    //27(1)- criar a func,
     func getHistoryURLSession(completion: @escaping completion<History?>) {
+        //27(2)- pegar o MOCK, colar no site https://designer.mocky.io/design para pegar a URL
         let URLString: String = "https://run.mocky.io/v3/0f0dd53e-f301-43e4-b902-f90762dd0492"
         guard let url: URL = URL(string: URLString) else { return }
         
@@ -78,3 +83,6 @@ class HistoryService: HistoryServiceProtocol {
     }
 }
 
+
+//28-Alamofire, instalação na aula 36
+//28- alamofire é um framework

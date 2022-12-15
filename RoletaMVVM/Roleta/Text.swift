@@ -59,7 +59,7 @@ import Foundation
 //A View se liga ao ViewModel, através da propriedade DataContext que é setada para a classe ViewModel correspondente à aquela View.
     //ex: camada de View, UIButton, UILabel, UItableView, etc.
 
-//VIEWMODEL - Todo o processamento fica na ViewModel, ela disponibiliza para a View uma lógica de apresentação. A ViewModel é peça importante, pq é ela quem vai coordenar as iterações da View com o Model. A ViewModel é uma classe não visual, que expões para a View uma lógica de apresentação.
+//VIEWMODEL - Todo o processamento fica na ViewModel, ela disponibiliza para a View uma lógica de apresentação. A ViewModel é peça importante, pq é ela quem vai coordenar as iterações da View com o Model. A ViewModel é uma classe não visual, que expõe para a View uma lógica de apresentação.
 
 //A camada Model não conhece a View( Camada de apresentação ) e vice-versa, na verdade a View conhece a ViewModel e se comunica com ela através do mecanismo de binding.
 
@@ -85,3 +85,31 @@ import Foundation
 //da onde vem o jason? -> vem do backend.
 //o dev cria o mock na mão para poder trabalhar, caso ocorra algum problema, como falta de conexào por exemplo. e o arquivo está "MOCKADO" dentro do projeto.
 //E utilizamos o arquivo pra que? -> PARA REALIZAR TESTES! 
+
+
+
+////--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X-
+
+
+//Exemplos de Arquitetura MVVM
+
+// Tela Home
+
+//HomeVIewController.stoyboardou HomeVIewController.xib ou HomeScreen(ViewCode)
+//HomeVIewController
+//HomeVIewModel
+//HomeService -> OBS: Caso seja necessário -> Essa classe deve conter (HomeServiceProtocol -> OBS: Depende da arquitetura.
+
+// Tela Detail
+
+//DetailViewController.storyboard ou DetailViewController.xib ou DetailScreem(ViewCode)
+//DetailViewController
+//DetailVIewModel
+//DetailService -> OBS: Caso seja necessário -> Essa classe deve conter (DetailServiceProtocol -> OBS: Depende da arquitetura.
+
+
+////--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X--X-
+
+
+
+
