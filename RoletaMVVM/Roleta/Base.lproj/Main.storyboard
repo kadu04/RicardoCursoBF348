@@ -8,17 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--History-->
         <scene sceneID="xdo-cm-WQX">
             <objects>
-                <viewController storyboardIdentifier="HistoryVC" id="OXc-zm-xxh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryVC" id="OXc-zm-xxh" customClass="HistoryVC" customModule="Roleta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pgr-va-kRx">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-bx-qKT">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EBe-AH-Ojn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EBe-AH-Ojn" firstAttribute="trailing" secondItem="UGO-bx-qKT" secondAttribute="trailing" id="1O0-Dh-Iof"/>
+                            <constraint firstItem="EBe-AH-Ojn" firstAttribute="bottom" secondItem="UGO-bx-qKT" secondAttribute="bottom" id="UWI-R4-x2n"/>
+                            <constraint firstItem="UGO-bx-qKT" firstAttribute="leading" secondItem="EBe-AH-Ojn" secondAttribute="leading" id="eJj-FP-jAg"/>
+                            <constraint firstItem="UGO-bx-qKT" firstAttribute="top" secondItem="EBe-AH-Ojn" secondAttribute="top" id="fMv-bH-fy6"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="AzH-mU-aya"/>
+                    <tabBarItem key="tabBarItem" title="History" image="square.and.arrow.up" catalog="system" id="AzH-mU-aya"/>
+                    <connections>
+                        <outlet property="tableView" destination="UGO-bx-qKT" id="his-wt-rH1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vut-a4-Tbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +127,7 @@
     </scenes>
     <resources>
         <image name="card" width="128" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

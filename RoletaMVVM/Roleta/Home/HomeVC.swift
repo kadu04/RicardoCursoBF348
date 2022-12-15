@@ -14,6 +14,7 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    //AULA 32 -> Fazer as ligações dos botões.
     @IBOutlet weak var logoAppImageView: UIImageView!
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -23,7 +24,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
-    //7-
+    //7- criar a HomeViewModel
     var viewModel: HomeViewModel = HomeViewModel()
     
     
@@ -50,18 +51,21 @@ class HomeVC: UIViewController {
         tableView.backgroundColor = .black
     }
     
-    
+    //7(1) se vai ter uma TableView, tem que fazer a configuração dela, e dpois chamar no viewDidLoad
     func configTableView() {
+        //7(2)- assinar os protocolos da TableView
         tableView.delegate = self
         tableView.dataSource = self
+        
         tableView.separatorStyle = .none
+        //7(3)- registrar as células da TableView
         tableView.register(EmptyTableViewCell.nib(), forCellReuseIdentifier: EmptyTableViewCell.identifier)
         tableView.register(PersonTableViewCell.nib(), forCellReuseIdentifier: PersonTableViewCell.identifier)
     }
     
     //8(1) Tudo que tiver LÓGICA, transferir para a HomeViewModel
     func blockedDrawNumberButton() {
-        //9- Criaou a var na HomeViewModel,agora tem que chamar! "if listPerson.isEmpty"mudar para "if viewModel.isListPersonEmpty
+        //9- Criou a var na HomeViewModel,agora tem que chamar! "if listPerson.isEmpty" mudar para "if viewModel.isListPersonEmpty
         if viewModel.isListPersonEmpty {
             drawNumberButton.isEnabled = false
             drawNumberButton.alpha = 0.5
@@ -103,6 +107,7 @@ extension HomeVC: UITableViewDelegate {
     }
 }
 
+//7(4)- fazer os métodos da TableView
 extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //10- fazer a mesma lógica. alterar de "if listPerson.count == 0" para "if viewModel.isListPersonEmpty
@@ -131,7 +136,7 @@ extension HomeVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //10(2)- fazer a mesma lógica. alterar de "if listPerson.count == 0" para "if viewModel.isListPersonEmpty"
-        //18(1)- depois que mandar essa lógica pra lá, excluir TUDO e substituir por pelo return
+        //18(1)- depois que mandar essa lógica pra lá, excluir TUDO e substituir por pelo return. depois criar o grupo History e file HistoryVC //19-
 //        if viewModel.isListPersonEmpty {
 //            return 248
 //        } else {
