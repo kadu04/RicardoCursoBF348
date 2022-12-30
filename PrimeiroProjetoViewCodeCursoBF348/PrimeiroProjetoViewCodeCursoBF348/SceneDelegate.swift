@@ -4,19 +4,27 @@
 //
 //  Created by Ricardo Massaki on 28/12/22.
 //
+//SceneDelegate - Ele é responsável pelo que é mostrado na tela
+
+
 
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    //window é o que o usuário está vizualizando.
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        //04- criar o let abaixo e dpois criar o file LoginScreen
+        let window = UIWindow(windowScene: windowScene)
+        let vc:LoginVC = LoginVC()
+        //Abordagem com Navigation implementar a linha abaixo, caso contrário só comentar/remover.
+        //let nav = UINavigationController(rootViewController: vc)
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
