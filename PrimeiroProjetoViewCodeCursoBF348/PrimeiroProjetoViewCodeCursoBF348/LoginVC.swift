@@ -14,10 +14,21 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
+    //11-
+    var screen: LoginScreen?
+    
+    //10-
+    override func loadView() {
+        //12-
+        screen = LoginScreen()
+        view = screen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        //levar o backgroundColor lá para a LoginScreen
+//        view.backgroundColor = .red
     }
     
     
