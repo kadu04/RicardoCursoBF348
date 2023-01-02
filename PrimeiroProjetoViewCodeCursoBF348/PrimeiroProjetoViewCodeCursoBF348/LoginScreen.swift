@@ -7,7 +7,20 @@
 //05- Criar o new file LoginScreen (cocoa e class UIView)
 import UIKit
 
+//19-
+protocol LoginScreenProtocol: AnyObject {
+    func tappedLoginButton()
+}
+
 class LoginScreen: UIView {
+    
+    //20-
+    private weak var delegate:LoginScreenProtocol?
+    //20(1)-
+    public func delegate(delegate:LoginScreenProtocol?) {
+        self.delegate = delegate
+    }
+    
     
     //07-
     lazy var loginLabel: UILabel = {
@@ -42,6 +55,30 @@ class LoginScreen: UIView {
         return tf
     }()
     
+    //18-
+    lazy var loginButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Entrar no app", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .white
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 8
+        // action
+        //19-
+        button.addTarget(self, action: #selector(tappedLoginButton), for: .touchUpInside)
+        return button
+    }()
+    
+    //19(1) fazer o @objc do #selector
+    @objc func tappedLoginButton() {
+        //21- depois que testar o ap, deletar o print.
+        //print(#function)
+        //22- chamar a função do protocolo, e dpois chamar lá na LoginVC
+        delegate?.tappedLoginButton()
+    }
+    
     //06- criar o override init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -60,12 +97,21 @@ class LoginScreen: UIView {
         addSubview(emailTextField)
         //17(1)
         addSubview(passwordTextField)
+        //18(1)
+        addSubview(loginButton)
         
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //26- dpois ir p/LoginVC
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        emailTextField.delegate = delegate
+        passwordTextField.delegate = delegate
+    }
+    
     //09- dpois ir p/LoginVC
     private func configConstraints() {
         NSLayoutConstraint.activate([
@@ -84,7 +130,15 @@ class LoginScreen: UIView {
             passwordTextField.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
             passwordTextField.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
             passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
-    
+            
+            //18(2)
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
+            loginButton.leadingAnchor.constraint(equalTo: emailTextField.leadingAnchor),
+            loginButton.trailingAnchor.constraint(equalTo: emailTextField.trailingAnchor),
+            loginButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
+            
+            
+            
         ])
     }
     

@@ -29,10 +29,25 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         //levar o backgroundColor lá para a LoginScreen
 //        view.backgroundColor = .red
+        //23- chamar o protocolo que assinou lá na LoginScreen
+        screen?.delegate(delegate: self)
+        //27-
+        screen?.configTextFieldDelegate(delegate: self)
     }
-    
-    
-
-
 }
 
+//24-
+extension LoginVC: LoginScreenProtocol {
+    func tappedLoginButton() {
+        
+    }
+}
+
+//25-
+extension LoginVC: UITextFieldDelegate {
+    //28-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
